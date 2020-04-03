@@ -1,183 +1,159 @@
 <!DOCTYPE html>
 <html>
+	<head>
+	<meta charset="utf-8">
+	<title>MarvelLOD Collaborations - Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Main css  -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Animate css -->
+	<link rel="stylesheet" href="css/animate.css">
+    <!-- Google fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet'>
 
-    <title>Children's Literature</title>
+	</head>
+	<body>
 
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-    <!-- Font Awesome JS -->
-    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script> -->
-    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script> -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
-
-</head>
-
-<body>
-    <div class="wrapper">
-        <!-- Sidebar  -->
-        <nav id="sidebar">
-            <div class="sidebar-header">
-                <h3>Children's Literature</h3>
-            </div>
-
-            <ul class="list-unstyled components">
-              <p>Studying the Relationship</p>
-                <li class="active">
-                    <a href="#overview">Project Overview</a>
-                </li>
-                <li>
-                    <a href="#itemSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Items</a>
-                    <ul class="collapse list-unstyled" id="itemSubmenu">
-                        <li>
-                            <a href="#item1">Item 1</a>
-                        </li>
-                        <li>
-                            <a href="#item2">Item 2</a>
-                        </li>
-                        <li>
-                            <a href="#item3">Item 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#ER">E/R Model</a>
-                </li>
-                <li>
-                    <a href="#theoretical">Theoretical Model</a>
-                </li>
-                <li>
-                    <a href="#conceptSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Conceptual Model</a>
-                    <ul class="collapse list-unstyled" id="conceptSubmenu">
-                        <li>
-                            <a href="#conceptual">WHO</a>
-                        </li>
-                        <li>
-                            <a href="#">WHERE</a>
-                        </li>
-                        <li>
-                            <a href="#">WHAT</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="contact">Contact</a>
-                </li>
-            </ul>
-            <button class="navbar-toggler d-flex justify-content-start" type="button">
-              <i class="fab fa-github btn btn-dark btn-lg CTAs" href="#" role="button"> View on Github</i>
-            </button>
-        </nav>
-
-        <!-- Page Content  -->
-        <div id="content">
-
-            <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-
-                    <button type="button" id="sidebarCollapse" class="btn btn-info">
-                        <i class="fas fa-align-left"></i>
-                        <span>Toggle Sidebar</span>
-                    </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                        </ul>
+ 	<!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-static-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header pull-left">
+                        <a href="" class="navbar-brand">
+                            <span class="brand-logo"><img src="images/logo.png" alt=""/></span>
+                        </a>
                     </div>
-                </div>
-            </nav> -->
+                    <div class="main-nav pull-right">
+                        <div class="button_container toggle">
+                            <span class="top"></span>
+                            <span class="middle"></span>
+                            <span class="bottom"></span>
+                        </div>
+                    </div>
+                    <div class="overlay" id="overlay">
+                        <nav class="overlay-menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="items.html">Items</a></li>
+                                <li><a href="metadata.html">Metadata Alignment</a></li>
+                                <li><a href="theoretical.html">Theoretical Model</a></li>
+																<li><a href="conceptual.html">Conceptual Model</a></li>
+																<li><a href="representation.html">Data Representation</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div><!-- /container -->
+    </nav>
+    <!-- /Navigation -->
 
-            <div id="overview">
-            <h2>Project Overview</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
 
-            <div class="line"></div>
+    <!-- Quote -->
+	<div id="home-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 pull-right">
+						<h1 class="home-heading wow fadeInUp animated">It is Quent's pictures rather than my own descriptions that have <span>brought to life</span> such characters as the BFG, Miss Trunchbull, Mr Twit and the Grand High Witch.</h1>
+						<div class="text-home wow fadeInUp animated"><strong>Roald Dahl</strong></div>
 
-            <div id="ER">
-            <h2>E/R Model</h2>
-            <p>Below you can see our model.</p>
-            </div>
+					</div>
+				</div>
+			</div>
+	</div>
+    <!-- /Quote -->
 
-            <div class="line"></div>
 
-            <div id="items">
-            <h2>Items</h2>
-            <p>Below you can see the items we chose.</p>
-            <ol>
-              <li id="item1">
-                <h3>Item one</h3>
-                <p>This item is so and so.</p>
-              </li>
-              <li id="item2">
-                <h3>Item two</h3>
-                <p>This item is so and so.</p>
-              </li>
-              <li id="item3">
-                <h3>Item three</h3>
-                <p>This item is so and so.</p>
-              </li>
-            </ol>
-            </div>
+    <!-- Main Banner -->
+    <div class="container">
+         <div class="row">
+           <div class="banner">
+             <div class="vertical-text">First collab: The Enormous Crocodile</div>
+             <img src="images/crocodile.jpg" alt=""/>
+           </div>
+          </div>
+     </div>
+     <!-- /Main Banner -->
 
-            <div class="line"></div>
 
-            <div id="theoretical">
-            <h2>Theoretical Model</h2>
-            <p>Here you can see our project's theoretical model.</p>
-            </div>
+     <div class="container">
+          <div class="row">
+            <div class="line-symbol"></div>
+          </div>
+     </div>
 
-            <div class="line"></div>
+		 <!-- Intro -->
+     <div class="container">
+        <div class="row final-row">
+          <div class="col-md-5 col-sm-5 studio-margin wow fadeInUp animated">
+            <h2 class="studio-heading">Introduction
+            <span>about the project</span>
+            <img src="images/BFG-1.jpg" alt=""/>
+            </h2>
+          </div>
+          <div class="col-md-7 col-sm-7 studio-margin">
+            <p class="text-studio"> Our project has at its core the long and prolific collaboration between the author <span class="text-bold">Roald Dahl</span> and the illustrator <span class="text-bold">Quentin Blake</span>. Their meeting in an English publishing house in 1976 marked the beginning of a path destined to change the history of children's literature. How many of us could ever forget the disarming courage of Matilda or the sincere kindness of the BFG? And how many, as soon as these titles are pronounced, do not have in their minds the image of the marvellous illustrations that are so wonderful for their communicative simplicity?
+            </p>
+						<p class="text-studio">We first selected <span class="text-bold">10 objects</span> that exemplified their relationship and that came from a context of Libraries, Archives or Museums. In choosing the objects we have tried to emphasize the indispensability of the illustrative aspect. Then we represented them through <span class="text-bold">an E/R Model</span>. We decided to put the general entity of the relationship between Roald Dahl and Quentin Blake at the centre of our model. The reason for this choice stemmed from the desire to focus on their collaboration “in fieri”: the 10 objects are the emblem of a relationship whose product has had an extraordinary impact in the culture not only in Europe but worldwide.
+The next step was to create a <span class="text-bold">Metadata Standard Alignment</span> for each object and dedicate ourselves to the development of <span class="text-bold">the Conceptual and Theoretical Model</span>.
 
-            <div id="conceptual">
-            <h3>Conceptual Model</h3>
-            <p>Here you can see our project's conceptual model.</p>
-            </div>
-
-            <div class="line"></div>
-
-            <div id="contact">
-            <h3>Contact</h3>
-            <p>This project was created by so and so.</p>
-            </div>
+						</p>
+					 <p class="text-studio">We firmly believe that the process we developed and exemplified in the specific Dahl-Blake relationship can be re-applied in multiple contexts related to children's literature. Indeed, innumerable cornerstones of both European and World literature are based on the close collaboration between an author and an illustrator.
+					</p>
+          </div>
         </div>
-    </div>
+     </div>
 
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <!-- jQuery Custom Scroller CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
-    <script src="js/main.js"></script>
-</body>
+     <!-- /Intro -->
 
+     <!-- Footer-->
+     <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-3">
+          </div>
+          <div class="col-md-6 col-sm6 section-bg-color">
+            <div class="row">
+              <div class="col-sm-9">
+                <h2>INFO</h2>
+                <p>Created by Elviira, Giulia, and Nooshin</p>
+								<p>Knowledge Organization and Digital Methods in The Cultural Heritage Domain</p>
+                <p>University of Bologna</p>
+              </div><!-- /col-sm-9 -->
+            </div><!--/row-->
+          </div><!-- /col-sm-6 -->
+          <div class="col-md-3 col-sm-3 section-bg-color1">
+            <div class="row">
+              <div class="col-sm-9">
+              <h3>Copyright 2020</h3>
+              <p class="pull-right"><a href=""><img src="images/twitter.png" alt=""/></a></p>
+              <p class="pull-right icons-f"><a href=""><img src="images/facebook.png" alt=""/></a></p>
+              </div><!-- /col-sm-9 -->
+            </div><!--/row-->
+          </div><!-- /col-sm-3 -->
+        </div><!-- /row -->
+      </div><!-- /container -->
+    </footer><!-- /footer -->
+
+	<!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+    <!-- Boostrap JS -->
+	<script src="js/bootstrap.min.js"></script>
+    <!-- Masonry JavaScript -->
+    <script src="js/masonry.js"></script>
+    <!-- Nav JS -->
+	<script src="js/nav.js"></script>
+    <!-- Smooth scroll JS -->
+    <script src="js/smoothscroll.js"></script>
+    <!-- Wow JavaScript -->
+    <script src="js/wow.js"></script>
+
+    <script>
+    new WOW().init();
+    </script>
+
+
+	</body>
 </html>
