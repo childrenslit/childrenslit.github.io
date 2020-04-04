@@ -239,7 +239,7 @@
 			}
 
 			// Call the load function with the href attribute of the item
-			loadImage(items.eq(index).attr('href'), function(){
+			loadImage(items.eq(index).attr('href'), items.eq(index).attr('tittle'), function(){
 				placeholders.eq(index).html(this);
 			});
 		}
@@ -247,13 +247,15 @@
 		// Load the image and execute a callback function.
 		// Returns a jQuery object
 
-		function loadImage(src, callback){
+		function loadImage(src, paragraph, callback){
 
-			var img = $('<img>').on('load', function(){
+			var img = $('<img><p class="caption">').on('load', function(){
 				callback.call(img);
 			});
 
+
 			img.attr('src',src);
+			img.text(paragraph);
 		}
 
 		function showNext(){
