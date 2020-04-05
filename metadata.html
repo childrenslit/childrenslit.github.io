@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>MarvelLOD Collaborations - Items</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Main css  -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+    <!-- Gallery -->
+    <link rel="stylesheet" href="css/touchTouch.css">
+    <!-- Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel="stylesheet">
+
+	</head>
+	<body>
+
+    <!-- Navigation -->
+      <nav class="navbar navbar-custom navbar-static-top" role="navigation">
+                  <div class="container">
+                      <div class="navbar-header pull-left">
+                          <a href="./index.html" class="navbar-brand">
+                              <span class="brand-logo"><img src="images/logo.png" alt=""/></span>
+                          </a>
+                      </div>
+                      <div class="main-nav pull-right">
+                          <div class="button_container toggle">
+                              <span class="top"></span>
+                              <span class="middle"></span>
+                              <span class="bottom"></span>
+                          </div>
+                      </div>
+                      <div class="overlay" id="overlay">
+                          <nav class="overlay-menu">
+                              <ul>
+                                  <li><a href="index.html">Home</a></li>
+                                  <li><a href="items.html">Items</a></li>
+                                  <li><a href="metadata.html">Metadata Alignment</a></li>
+                                  <li><a href="theoretical.html">Theoretical Model</a></li>
+  																<li><a href="conceptual.html">Conceptual Model</a></li>
+  																<li><a href="representation.html">Data Representation</a></li>
+                                  <li><a href="contact.html">Contact us</a></li>
+                              </ul>
+                          </nav>
+                      </div>
+                  </div><!-- /container -->
+      </nav>
+      <!-- /Navigation -->
+
+    <div class="container item-margin">
+       <div class="row">
+         <div class="col-md-5 col-sm-5 studio-margin wow fadeInUp animated">
+           <h2 class="studio-heading">Metadata Alignment
+           <span>based on what we needed</span>
+           </h2>
+         </div>
+         <div class="col-md-3 col-sm-3 studio-margin">
+           <div class="text-studio">
+           <h3><b>Quick navigation:</b></h3>
+           <ul class="list-group">
+           <li><a href="#books">Books</a></li>
+           <li><a href="#videos">Video Material</a></li>
+           </ul>
+           </div>
+         </div>
+         <div class="col-md-3 col-sm-3 studio-margin">
+           <div class="text-studio">
+           <h3>‌</h3>
+           <ul class="list-group">
+           <li><a href="#archives">Archival Documents</a></li>
+           <li><a href="#artefacts">Artefacts</a></li>
+           </ul>
+           </div>
+         </div>
+      </div>
+    </div>
+
+
+     <!-- Masonry -->
+     <div class="container">
+         <div class="row">
+           <h3 id="books"><b>Books/</b></h3>
+           <h4>WHO</h4>
+           <table class="table table-bordered">
+             <thead>
+               <tr>
+                 <th scope="col"></th>
+                 <th scope="col">DC</th>
+                 <th scope="col">ISBD</th>
+                 <th scope="col">BIBFRAME</th>
+                 <th scope="col">EDM</th>
+                 <th scope="col">MARC</th>
+                 <!-- <th scope="col">TEI</th> -->
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <th scope="row">Creator</th>
+                 <td>dc:creator</td>
+                 <td>1.4. Statement of responsibility</td>
+                 <td>agent</td>
+                 <td>dc:creator</td>
+                 <td>100 - Main Entry - Personal Name - $a</td>
+                 <!-- <td>agent</td> -->
+               </tr>
+               <tr>
+                 <th scope="row">Contributor</th>
+                 <td>dc:contributor</td>
+                 <td>1.4. Statement of responsibility</td>
+                 <td>agent</td>
+                 <td>dc:contributor</td>
+                 <td>700 - Added Entry-Personal Name - $a</td>
+                 <!-- <td>@fat</td> -->
+               </tr>
+               <tr>
+                 <th scope="row">Publisher</th>
+                 <td>dc:publisher</td>
+                 <td>4.2. Name of publisher</td>
+                 <td>provisionActivity</td>
+                 <td>dc:publisher</td>
+                 <td>260 - Publication, Distribution, etc. - $b</td>
+                 <!-- <td>@twitter</td> -->
+               </tr>
+             </tbody>
+           </table>
+         </div><!-- /row -->
+
+         <div class="row">
+           <h4>WHERE</h4>
+           <table class="table table-bordered">
+             <thead>
+               <tr>
+                 <th scope="col"></th>
+                 <th scope="col">DC</th>
+                 <th scope="col">ISBD</th>
+                 <th scope="col">BIBFRAME</th>
+                 <th scope="col">EDM</th>
+                 <th scope="col">MARC</th>
+                 <!-- <th scope="col">TEI</th> -->
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <th scope="row">Place of Publication</th>
+                 <td>dc:coverage</td>
+                 <td>4.1. Place of publication</td>
+                 <td>originPlace</td>
+                 <td>edm:Place</td>
+                 <td>260 - Publication, Distribution, etc. - $a</td>
+                 <!-- <td>agent</td> -->
+               </tr>
+             </tbody>
+           </table>
+         </div><!-- /row -->
+
+         <div class="row">
+           <h4>WHEN</h4>
+           <table class="table table-bordered">
+             <thead>
+               <tr>
+                 <th scope="col"></th>
+                 <th scope="col">DC</th>
+                 <th scope="col">ISBD</th>
+                 <th scope="col">BIBFRAME</th>
+                 <th scope="col">EDM</th>
+                 <th scope="col">MARC</th>
+                 <!-- <th scope="col">TEI</th> -->
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <th scope="row">Date of Publication</th>
+                 <td>dcterms:issued</td>
+                 <td>4.3. Date of publication</td>
+                 <td>originDate</td>
+                 <td>dcterms:Issued</td>
+                 <td>260 - Publication, Distribution, etc. - $c</td>
+                 <!-- <td>agent</td> -->
+               </tr>
+             </tbody>
+           </table>
+         </div><!-- /row -->
+
+         <div class="row">
+           <h4>WHAT</h4>
+           <table class="table table-bordered">
+             <thead>
+               <tr>
+                 <th scope="col"></th>
+                 <th scope="col">DC</th>
+                 <th scope="col">ISBD</th>
+                 <th scope="col">BIBFRAME</th>
+                 <th scope="col">EDM</th>
+                 <th scope="col">MARC</th>
+                 <!-- <th scope="col">TEI</th> -->
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <th scope="row">Title</th>
+                 <td>dc:title</td>
+                 <td>1.1. Title proper</td>
+                 <td>title</td>
+                 <td>dc:title</td>
+                 <td>222 - Key Title - $a</td>
+                 <!-- <td>agent</td> -->
+               </tr>
+               <tr>
+                 <th scope="row">Language</th>
+                 <td>dc:language</td>
+                 <td>7.0. Notes on the content form</td>
+                 <td>language</td>
+                 <td>edm:language</td>
+                 <td>041 - Language Code - $a</td>
+                 <!-- <td>@fat</td> -->
+               </tr>
+               <tr>
+                 <th scope="row">Subject</th>
+                 <td>dc:subject</td>
+                 <td>7.7. Notes relating to content</td>
+                 <td>subject</td>
+                 <td>dc:subject</td>
+                 <td>655 - Index Term-Genre/Form - $a</td>
+                 <!-- <td>@twitter</td> -->
+               </tr>
+             </tbody>
+           </table>
+         </div><!-- /row -->
+     </div><!-- /container -->
+
+     <div class="container">
+          <div class="row">
+            <div class="line-symbol"></div>
+          </div>
+     </div>
+
+     <div class="container">
+         <div class="row">
+           <h3 id="videos"><b>Video Material/</b></h3>
+           <h4>WHO</h4>
+           <table class="table table-bordered">
+             <thead>
+               <tr>
+                 <th scope="col"></th>
+                 <th scope="col">DC</th>
+                 <th scope="col">Ebucore</th>
+                 <th scope="col">EDM</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <th scope="row">Creator</th>
+                 <td>dc:creator</td>
+                 <td>dc:agent</td>
+                 <td>dc:creator</td>
+               </tr>
+               <tr>
+                 <th scope="row">Contributor</th>
+                 <td>dc:contributor</td>
+                 <td>core:Person</td>
+                 <td>dc:contributor</td>
+               </tr>
+               <tr>
+                 <th scope="row">Publisher</th>
+                 <td>dc:publisher</td>
+                 <td>ebucore:Organisation</td>
+                 <td>dc:publisher</td>
+               </tr>
+               <tr>
+                 <th scope="row">Rights</th>
+                 <td>dc:rights</td>
+                 <td>ebucore:Rights</td>
+                 <td>edm:rights</td>
+               </tr>
+               <tr>
+                 <th scope="row">Cast Member</th>
+                 <td>-</td>
+                 <td>ebucore:Cast</td>
+                 <td>-</td>
+               </tr>
+               <tr>
+                 <th scope="row">Character</th>
+                 <td>-</td>
+                 <td>ebucore:Character</td>
+                 <td>-</td>
+               </tr>
+             </tbody>
+           </table>
+         </div><!-- /row -->
+
+         <div class="row">
+           <h4>WHERE</h4>
+           <table class="table table-bordered">
+             <thead>
+               <tr>
+                 <th scope="col"></th>
+                 <th scope="col">DC</th>
+                 <th scope="col">Ebucore</th>
+                 <th scope="col">EDM</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <th scope="row">Place of Creation</th>
+                 <td>dc:coverage</td>
+                 <td>ebucore:Location</td>
+                 <td>-</td>
+               </tr>
+               <tr>
+                 <th scope="row">Place of Publication</th>
+                 <td>dc:coverage</td>
+                 <td>ebucore:hasPublicationRegion</td>
+                 <td>edm:Place</td>
+               </tr>
+             </tbody>
+           </table>
+         </div><!-- /row -->
+
+         <div class="row">
+           <h4>WHEN</h4>
+           <table class="table table-bordered">
+             <thead>
+               <tr>
+                 <th scope="col"></th>
+                 <th scope="col">DC</th>
+                 <th scope="col">Ebucore</th>
+                 <th scope="col">EDM</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <th scope="row">Date of Publication</th>
+                 <td>dcterms:issued</td>
+                 <td>ebucore:publicationStartDateTime</td>
+                 <td>dcterms:issued</td>
+               </tr>
+               <tr>
+                 <th scope="row">Date of Creation</th>
+                 <td>dc:date</td>
+                 <td>ebucore:idDateOfCreation</td>
+                 <td>dcterms:created</td>
+               </tr>
+             </tbody>
+           </table>
+         </div><!-- /row -->
+
+         <div class="row">
+           <h4>WHAT</h4>
+           <table class="table table-bordered">
+             <thead>
+               <tr>
+                 <th scope="col"></th>
+                 <th scope="col">DC</th>
+                 <th scope="col">Ebucore</th>
+                 <th scope="col">EDM</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <th scope="row">Subject</th>
+                 <td>dc:subject</td>
+                 <td>ebucore:Subject</td>
+                 <td>dc:subject</td>
+               </tr>
+               <tr>
+                 <th scope="row">Title</th>
+                 <td>dc:title</td>
+                 <td>ebucore:title</td>
+                 <td>dc:title</td>
+               </tr>
+               <tr>
+                 <th scope="row">Content</th>
+                 <td>dc:description</td>
+                 <td>ebucore:description</td>
+                 <td>dc:description</td>
+               </tr>
+               <tr>
+                 <th scope="row">Format</th>
+                 <td>dc:format</td>
+                 <td>ebucore:Format</td>
+                 <td>dc:format</td>
+               </tr>
+               <tr>
+                 <th scope="row">Language</th>
+                 <td>dc:language</td>
+                 <td>ebucore:Language, ebucore:OriginalLanguage</td>
+                 <td>edm:language</td>
+               </tr>
+               <tr>
+                 <th scope="row">Genre</th>
+                 <td>dc:type</td>
+                 <td>ebucore:Genre</td>
+                 <td>-</td>
+               </tr>
+             </tbody>
+           </table>
+         </div><!-- /row -->
+     </div><!-- /container -->
+
+      <div class="container">
+           <div class="row">
+             <div class="line-symbol"></div>
+           </div>
+      </div>
+
+      <div class="container">
+          <div class="row">
+            <h3 id="archives"><b>Archival Documents/</b></h3>
+            <h4>WHO</h4>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">DC</th>
+                  <th scope="col">EAD</th>
+                  <th scope="col">FRBR</th>
+                  <th scope="col">ISBD</th>
+                  <th scope="col">MARC</th>
+                  <th scope="col">CDWA</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Creator</th>
+                  <td>dc:creator</td>
+                  <td>bioghist</td>
+                  <td>has edition or issue designation</td>
+                  <td>1XX: Main Entry - General Information</td>
+                  <td>1.4 Statement of responsibility</td>
+                  <td>4.1.3 Creator Identity CORE</td>
+                </tr>
+                <tr>
+                  <th scope="row">Publisher</th>
+                  <td>dc:publisher</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>4.1. Place of publication</td>
+                  <td>260 - Publication, Distribution, etc. - $b</td>
+                  <td>28.2 Person/Corporate Body Name CORE</td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- /row -->
+
+          <div class="row">
+            <h4>WHERE</h4>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">DC</th>
+                  <th scope="col">EAD</th>
+                  <th scope="col">FRBR</th>
+                  <th scope="col">ISBD</th>
+                  <th scope="col">MARC</th>
+                  <th scope="col">CDWA</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Place of Publication</th>
+                  <td>dc:coverage</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>4.1. Place of Publication</td>
+                  <td>260 - Publication, Distribution, etc. - $a</td>
+                  <td>29.2 Place Name CORE</td>
+                </tr>
+                <tr>
+                  <th scope="row">Held At</th>
+                  <td>dc:coverage</td>
+                  <td>repository</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>850 - Holding Institution, 852 - Location</td>
+                  <td>29.2 Place Name CORE</td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- /row -->
+
+          <div class="row">
+            <h4>WHEN</h4>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">DC</th>
+                  <th scope="col">EAD</th>
+                  <th scope="col">FRBR</th>
+                  <th scope="col">ISBD</th>
+                  <th scope="col">MARC</th>
+                  <th scope="col">CDWA</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Date of Publication</th>
+                  <td>dcterms:issued</td>
+                  <td>publicationstmt</td>
+                  <td>-</td>
+                  <td>4.3 Date of Publication, production and/or distribution</td>
+                  <td>260 - Publication, Distribution, etc. - $c</td>
+                  <td>4.2. Creation Date</td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- /row -->
+
+          <div class="row">
+            <h4>WHAT</h4>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">DC</th>
+                  <th scope="col">EAD</th>
+                  <th scope="col">FRBR</th>
+                  <th scope="col">ISBD</th>
+                  <th scope="col">MARC</th>
+                  <th scope="col">CDWA</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Title</th>
+                  <td>dc:title</td>
+                  <td>unittitle</td>
+                  <td>Title of the manifestation</td>
+                  <td>1.1. Title proper</td>
+                  <td>222 - Key Title - $a</td>
+                  <td>3.1. Title Text</td>
+                </tr>
+                <tr>
+                  <th scope="row">Language</th>
+                  <td>dc:language</td>
+                  <td>langmaterial</td>
+                  <td>Language of Expression</td>
+                  <td>7.0. Notes on the content form</td>
+                  <td>041 - Language Code - $a</td>
+                  <td>8.5. Inscription Language</td>
+                </tr>
+                <tr>
+                  <th scope="row">Subject</th>
+                  <td>dc:subject</td>
+                  <td>scopecontent</td>
+                  <td>Summarization of content (Expression)</td>
+                  <td>7.7. Notes relating to content</td>
+                  <td>655 - Index Term-Genre/Form - $a</td>
+                  <td>1.1. Catalog Level, 1.2. Object/Work Type</td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- /row -->
+      </div><!-- /container -->
+
+
+     <div class="container">
+          <div class="row">
+            <div class="line-symbol"></div>
+          </div>
+     </div>
+
+     <div class="container">
+         <div class="row">
+           <h3 id="artefacts"><b>Artefacts/</b></h3>
+           <h4>WHO</h4>
+           <table class="table table-bordered">
+             <thead>
+               <tr>
+                 <th scope="col"></th>
+                 <th scope="col">DC</th>
+                 <th scope="col">ISAD</th>
+                 <th scope="col">CDWA</th>
+                 <th scope="col">VRA Core</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <th scope="row">Creator</th>
+                 <td>dc:creator</td>
+                 <td>3.2.1. Name of creator</td>
+                 <td>4.1.3. Creator identity core</td>
+                 <td>agent</td>
+               </tr>
+               <tr>
+                 <th scope="row">Publisher</th>
+                 <td>dc:publisher</td>
+                 <td>5.4. Publication note</td>
+                 <td>28.2. Person corporate body name CORE</td>
+                 <td>agent</td>
+               </tr>
+             </tbody>
+           </table>
+         </div><!-- /row -->
+
+         <div class="row">
+           <h4>WHERE</h4>
+           <table class="table table-bordered">
+             <thead>
+               <tr>
+                 <th scope="col"></th>
+                 <th scope="col">DC</th>
+                 <th scope="col">ISAD</th>
+                 <th scope="col">CDWA</th>
+                 <th scope="col">VRA Core</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <th scope="row">Place of Publication</th>
+                 <td>dc:coverage</td>
+                 <td>5.4. Publication note, 5.1. Existence and location of originals</td>
+                 <td>29.2. Place name CORE</td>
+                 <td>location</td>
+               </tr>
+             </tbody>
+           </table>
+         </div><!-- /row -->
+
+         <div class="row">
+           <h4>WHEN</h4>
+           <table class="table table-bordered">
+             <thead>
+               <tr>
+                 <th scope="col"></th>
+                 <th scope="col">DC</th>
+                 <th scope="col">ISAD</th>
+                 <th scope="col">CDWA</th>
+                 <th scope="col">VRA Core</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <th scope="row">Date of Publication</th>
+                 <td>dcterms:issued</td>
+                 <td>1.3. Dates, 5.4. Publication notes</td>
+                 <td>4.2. Creation date</td>
+                 <td>date</td>
+               </tr>
+             </tbody>
+           </table>
+         </div><!-- /row -->
+
+         <div class="row">
+           <h4>WHAT</h4>
+           <table class="table table-bordered">
+             <thead>
+               <tr>
+                 <th scope="col"></th>
+                 <th scope="col">DC</th>
+                 <th scope="col">ISAD</th>
+                 <th scope="col">CDWA</th>
+                 <th scope="col">VRA Core</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <th scope="row">Title</th>
+                 <td>dc:title</td>
+                 <td>1.2. Title</td>
+                 <td>3.1. Title</td>
+                 <td>title</td>
+               </tr>
+               <tr>
+                 <th scope="row">Subject</th>
+                 <td>dc:subject</td>
+                 <td>3.1. Scope and content</td>
+                 <td>1.1. Catalog level, 1.2. Object/work type</td>
+                 <td>subject</td>
+               </tr>
+             </tbody>
+           </table>
+         </div><!-- /row -->
+     </div><!-- /container -->
+
+
+         <!-- Footer-->
+         <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-sm-3">
+              </div>
+
+              <div class="col-md-6 col-sm6 section-bg-color">
+                <div class="row">
+                  <div class="col-sm-9">
+                    <h2>INFO</h2>
+                    <p>Created by Elviira, Giulia, and Nooshin</p>
+    								<p>Knowledge Organization and Digital Methods in The Cultural Heritage Domain</p>
+                    <p>University of Bologna</p>
+                  </div><!-- /col-sm-9 -->
+                </div><!--/row-->
+              </div><!-- /col-sm-6 -->
+              <div class="col-md-3 col-sm-3 section-bg-color1">
+                <div class="row">
+                  <div class="col-sm-9">
+                  <h3><a href="http://github.com/marvellod/marvellod.github.io" target="_blank">View project source on Github</a></h3>
+                  <p class="pull-right icons-small"><a href="http://github.com/marvellod/marvellod.github.io" target="_blank"><img src="images/github.png" alt=""/></a></p>
+                  <!-- <p class="pull-right icons-f"><a href=""><img src="images/facebook.png" alt=""/></a></p> -->
+                  </div><!-- /col-sm-9 -->
+                </div><!--/row-->
+              </div><!-- /col-sm-3 -->
+            </div><!-- /row -->
+          </div><!-- /container -->
+        </footer><!-- /footer -->
+
+	 <!-- jQuery Version 1.11.0 -->
+     <script src="js/jquery-1.11.0.js"></script>
+     <!-- Boostrap JS -->
+	 <script src="js/bootstrap.min.js"></script>
+     <!-- Masonry JavaScript -->
+     <script src="js/masonry.js"></script>
+     <!-- Nav JS -->
+	 <script src="js/nav.js"></script>
+     <!-- Gallery JavaScript -->
+	 <script src="js/touchTouch.jquery.js"></script>
+	 <script src="js/script.js"></script>
+     <!-- Smooth scroll JS -->
+     <script src="js/smoothscroll.js"></script>
+     <!-- Wow JavaScript -->
+     <script src="js/wow.js"></script>
+
+     <script>
+     new WOW().init();
+     </script>
+
+	</body>
+</html>
