@@ -63,46 +63,79 @@
             </p>
           <!-- <div class="row"> -->
             <h3 id="books"><b>Books/</b></h3>
-            <h4>WHO</h4>
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <th scope="col"></th>
-                  <th scope="col">DC</th>
-                  <th scope="col">ISBD</th>
-                  <th scope="col">BIBFRAME</th>
-                  <th scope="col">EDM</th>
-                  <th scope="col">MARC</th>
-                  <!-- <th scope="col">TEI</th> -->
+                  <th scope="col">Question</th>
+                  <th scope="col">Predicate</th>
+                  <th scope="col">Model</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">Creator</th>
-                  <td>dc:creator</td>
-                  <td>1.4. Statement of responsibility</td>
-                  <td>agent</td>
-                  <td>dc:creator</td>
-                  <td>100 - Main Entry - Personal Name - $a</td>
-                  <!-- <td>agent</td> -->
+                  <th scope="row">What is the type of entity?</th>
+                  <td>rdf:type</td>
+                  <td>RDF</td>
                 </tr>
                 <tr>
-                  <th scope="row">Contributor</th>
-                  <td>dc:contributor</td>
-                  <td>1.4. Statement of responsibility</td>
-                  <td>agent</td>
-                  <td>dc:contributor</td>
-                  <td>700 - Added Entry-Personal Name - $a</td>
-                  <!-- <td>@fat</td> -->
+                  <th scope="row">What is the person’s name?</th>
+                  <td>foaf:name</td>
+                  <td>FOAF</td>
                 </tr>
                 <tr>
-                  <th scope="row">Publisher</th>
-                  <td>dc:publisher</td>
-                  <td>4.2. Name of publisher</td>
-                  <td>provisionActivity</td>
-                  <td>dc:publisher</td>
-                  <td>260 - Publication, Distribution, etc. - $b</td>
-                  <!-- <td>@twitter</td> -->
+                  <th scope="row">What is the person’s gender?</th>
+                  <td>foaf:gender</td>
+                  <td>FOAF</td>
+                </tr>
+                <tr>
+                  <th scope="row">Where was the person born?</th>
+                  <td>person:placeofBirth</td>
+                  <td>Person Core Vocabulary</td>
+                </tr>
+                <tr>
+                  <th scope="row">Where did the person die?</th>
+                  <td>person:placeofDeath</td>
+                  <td>Person Core Vocabulary</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the person’t citizenship?</th>
+                  <td>person:citizenship</td>
+                  <td>Person Core Vocabulary</td>
+                </tr>
+                <tr>
+                  <th scope="row">When was the person born?</th>
+                  <td>core:dateOfBirth</td>
+                  <td>Core Concepts Ontology</td>
+                </tr>
+                <tr>
+                  <th scope="row">When did the person die?</th>
+                  <td>core:dateOfDeath</td>
+                  <td>Core Concepts Ontology</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the person's occupation?</th>
+                  <td>core:occupation</td>
+                  <td>Core Concepts Ontology</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the person known for?</th>
+                  <td>core:knownFor</td>
+                  <td>Core Concepts Ontology</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who is the person notably associated with?</th>
+                  <td>core:notablyAssociatedWith</td>
+                  <td>Core Concepts Ontology</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the person a primary topic of?</th>
+                  <td>foaf:isPrimaryTopicOf</td>
+                  <td>FOAF</td>
+                </tr>
+                <tr>
+                  <th scope="row">Which resource refers to the same person?</th>
+                  <td>owl:sameAs</td>
+                  <td>OWL</td>
                 </tr>
               </tbody>
             </table>
@@ -125,48 +158,79 @@
           <div class="col-md-7 col-sm-7 studio-margin">
             <p class="text-studio"> Our project has at its core the long and prolific collaboration between the author <span class="text-bold">Roald Dahl</span> and the illustrator <span class="text-bold">Quentin Blake</span>. Their meeting in an English publishing house in 1976 marked the beginning of a path destined to change the history of children's literature. How many of us could ever forget the disarming courage of Matilda or the sincere kindness of the BFG? And how many, as soon as these titles are pronounced, do not have in their minds the image of the marvellous illustrations that are so wonderful for their communicative simplicity?
             </p>
-          <!-- <div class="row"> -->
-            <h3 id="books"><b>Books/</b></h3>
-            <h4>WHO</h4>
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <th scope="col"></th>
-                  <th scope="col">DC</th>
-                  <th scope="col">ISBD</th>
-                  <th scope="col">BIBFRAME</th>
-                  <th scope="col">EDM</th>
-                  <th scope="col">MARC</th>
-                  <!-- <th scope="col">TEI</th> -->
+                  <th scope="col">Question</th>
+                  <th scope="col">Predicate</th>
+                  <th scope="col">Model</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">Creator</th>
-                  <td>dc:creator</td>
-                  <td>1.4. Statement of responsibility</td>
-                  <td>agent</td>
-                  <td>dc:creator</td>
-                  <td>100 - Main Entry - Personal Name - $a</td>
-                  <!-- <td>agent</td> -->
+                  <th scope="row">What is the type of entity?</th>
+                  <td>rdf:type</td>
+                  <td>RDF</td>
                 </tr>
                 <tr>
-                  <th scope="row">Contributor</th>
-                  <td>dc:contributor</td>
-                  <td>1.4. Statement of responsibility</td>
-                  <td>agent</td>
-                  <td>dc:contributor</td>
-                  <td>700 - Added Entry-Personal Name - $a</td>
-                  <!-- <td>@fat</td> -->
+                  <th scope="row">What is the name of the place?</th>
+                  <td>gn:name</td>
+                  <td>GeoNames</td>
                 </tr>
                 <tr>
-                  <th scope="row">Publisher</th>
-                  <td>dc:publisher</td>
-                  <td>4.2. Name of publisher</td>
-                  <td>provisionActivity</td>
-                  <td>dc:publisher</td>
-                  <td>260 - Publication, Distribution, etc. - $b</td>
-                  <!-- <td>@twitter</td> -->
+                  <th scope="row">What is an alternative name of the place?</th>
+                  <td>gn:alternateName</td>
+                  <td>GeoNames</td>
+                </tr>
+                <tr>
+                  <th scope="row">In which country is the place located?</th>
+                  <td>gn:countryCode</td>
+                  <td>GeoNames</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the population of the place?</th>
+                  <td>n:population</td>
+                  <td>GeoNames</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the latitude?</th>
+                  <td>WGS84_POS:lat</td>
+                  <td>Basic Geo</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the longitude?</th>
+                  <td>WGS84_POS:long</td>
+                  <td>Basic Geo</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the map location?</th>
+                  <td>gn:locationMap</td>
+                  <td>GeoNames</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the country code?</th>
+                  <td>gn:countryCode</td>
+                  <td>GeoNames</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the related Wikipedia page?</th>
+                  <td>dbo:wikiPageExternalLink</td>
+                  <td>DBpedia</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is a brief description about the place?</th>
+                  <td>dbo:abstract</td>
+                  <td>DBpedia</td>
+                </tr>
+                <tr>
+                  <th scope="row">Which resource has the place as primary topic?</th>
+                  <td>foaf:primaryTopic</td>
+                  <td>FOAF</td>
+                </tr>
+                <tr>
+                  <th scope="row">Which resources refers to the same place?</th>
+                  <td>owl:sameAs</td>
+                  <td>OWL</td>
                 </tr>
               </tbody>
             </table>
@@ -189,48 +253,34 @@
           <div class="col-md-7 col-sm-7 studio-margin">
             <p class="text-studio"> Our project has at its core the long and prolific collaboration between the author <span class="text-bold">Roald Dahl</span> and the illustrator <span class="text-bold">Quentin Blake</span>. Their meeting in an English publishing house in 1976 marked the beginning of a path destined to change the history of children's literature. How many of us could ever forget the disarming courage of Matilda or the sincere kindness of the BFG? And how many, as soon as these titles are pronounced, do not have in their minds the image of the marvellous illustrations that are so wonderful for their communicative simplicity?
             </p>
-          <!-- <div class="row"> -->
-            <h3 id="books"><b>Books/</b></h3>
-            <h4>WHO</h4>
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <th scope="col"></th>
-                  <th scope="col">DC</th>
-                  <th scope="col">ISBD</th>
-                  <th scope="col">BIBFRAME</th>
-                  <th scope="col">EDM</th>
-                  <th scope="col">MARC</th>
-                  <!-- <th scope="col">TEI</th> -->
+                  <th scope="col">Question</th>
+                  <th scope="col">Predicate</th>
+                  <th scope="col">Model</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">Creator</th>
-                  <td>dc:creator</td>
-                  <td>1.4. Statement of responsibility</td>
-                  <td>agent</td>
-                  <td>dc:creator</td>
-                  <td>100 - Main Entry - Personal Name - $a</td>
-                  <!-- <td>agent</td> -->
+                  <th scope="row">What is the type of entity?</th>
+                  <td>rdf:type</td>
+                  <td>RDF</td>
                 </tr>
                 <tr>
-                  <th scope="row">Contributor</th>
-                  <td>dc:contributor</td>
-                  <td>1.4. Statement of responsibility</td>
-                  <td>agent</td>
-                  <td>dc:contributor</td>
-                  <td>700 - Added Entry-Personal Name - $a</td>
-                  <!-- <td>@fat</td> -->
+                  <th scope="row">In which format is it expressed?</th>
+                  <td>ead:date</td>
+                  <td>EAD</td>
                 </tr>
                 <tr>
-                  <th scope="row">Publisher</th>
-                  <td>dc:publisher</td>
-                  <td>4.2. Name of publisher</td>
-                  <td>provisionActivity</td>
-                  <td>dc:publisher</td>
-                  <td>260 - Publication, Distribution, etc. - $b</td>
-                  <!-- <td>@twitter</td> -->
+                  <th scope="row">What is the date’s relation with the concept?</th>
+                  <td>EAC-CPF:resourceRelationType</td>
+                  <td>EAC-CPF</td>
+                </tr>
+                <tr>
+                  <th scope="row">Which resource has the date as primary topic?</th>
+                  <td>foaf:primaryTopic</td>
+                  <td>FOAF</td>
                 </tr>
               </tbody>
             </table>
@@ -253,48 +303,309 @@
           <div class="col-md-7 col-sm-7 studio-margin">
             <p class="text-studio"> Our project has at its core the long and prolific collaboration between the author <span class="text-bold">Roald Dahl</span> and the illustrator <span class="text-bold">Quentin Blake</span>. Their meeting in an English publishing house in 1976 marked the beginning of a path destined to change the history of children's literature. How many of us could ever forget the disarming courage of Matilda or the sincere kindness of the BFG? And how many, as soon as these titles are pronounced, do not have in their minds the image of the marvellous illustrations that are so wonderful for their communicative simplicity?
             </p>
-          <!-- <div class="row"> -->
             <h3 id="books"><b>Books/</b></h3>
-            <h4>WHO</h4>
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <th scope="col"></th>
-                  <th scope="col">DC</th>
-                  <th scope="col">ISBD</th>
-                  <th scope="col">BIBFRAME</th>
-                  <th scope="col">EDM</th>
-                  <th scope="col">MARC</th>
-                  <!-- <th scope="col">TEI</th> -->
+                  <th scope="col">Question</th>
+                  <th scope="col">Predicate</th>
+                  <th scope="col">Model</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">Creator</th>
-                  <td>dc:creator</td>
-                  <td>1.4. Statement of responsibility</td>
-                  <td>agent</td>
-                  <td>dc:creator</td>
-                  <td>100 - Main Entry - Personal Name - $a</td>
-                  <!-- <td>agent</td> -->
+                  <th scope="row">What is the type of entity?</th>
+                  <td>rdf:type</td>
+                  <td>RDF</td>
                 </tr>
                 <tr>
-                  <th scope="row">Contributor</th>
-                  <td>dc:contributor</td>
-                  <td>1.4. Statement of responsibility</td>
-                  <td>agent</td>
-                  <td>dc:contributor</td>
-                  <td>700 - Added Entry-Personal Name - $a</td>
-                  <!-- <td>@fat</td> -->
+                  <th scope="row">What is the subject?</th>
+                  <td>dcterms:subject</td>
+                  <td>DCMI Metadata Terms</td>
                 </tr>
                 <tr>
-                  <th scope="row">Publisher</th>
-                  <td>dc:publisher</td>
-                  <td>4.2. Name of publisher</td>
-                  <td>provisionActivity</td>
-                  <td>dc:publisher</td>
-                  <td>260 - Publication, Distribution, etc. - $b</td>
-                  <!-- <td>@twitter</td> -->
+                  <th scope="row">What is the title/controlled form of the name?</th>
+                  <td>rdfs:label</td>
+                  <td>RDF</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is an alternate name of the book?</th>
+                  <td>schema:alternateName</td>
+                  <td>Schema</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the identifier? </th>
+                  <td>dcterms:identifier</td>
+                  <td>DCMI Metadata Terms</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is a summary of the content?</th>
+                  <td>dcterms:description</td>
+                  <td>DCMI Metadata Terms</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who is the author of the book?</th>
+                  <td>schema:author</td>
+                  <td>Schema</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who is the illustrator of the book?</th>
+                  <td>schema:illustrator</td>
+                  <td>Schema</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the book genre?</th>
+                  <td>dbpedia-owl:LiteraryGenre</td>
+                  <td>DBpedia</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who appears in the content?</th>
+                  <td>schema:Character</td>
+                  <td>Schema</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the character description?</th>
+                  <td>dc:description</td>
+                  <td>DCMI Metadata Terms</td>
+                </tr>
+                <tr>
+                  <th scope="row">Which resource has the concept as primary resource?</th>
+                  <td>foaf:isPrimaryTopicOf</td>
+                  <td>FOAF</td>
+                </tr>
+                <tr>
+                  <th scope="row">Where has the book been published?</th>
+                  <td>dc:coverage</td>
+                  <td>DCMI Metadata Terms</td>
+                </tr>
+                <tr>
+                  <th scope="row">When has the book been published?</th>
+                  <td>dcterms:issued </td>
+                  <td>DCMI Metadata Terms</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who is the publisher?</th>
+                  <td>schema:publisher</td>
+                  <td>Schema</td>
+                </tr>
+                <tr>
+                  <th scope="row">Which resources refer to the same concept?</th>
+                  <td>owl:sameAs</td>
+                  <td>OWL</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 id="videos"><b>Video Material/</b></h3>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Question</th>
+                  <th scope="col">Predicate</th>
+                  <th scope="col">Model</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">What is the type of entity?</th>
+                  <td>rdf:type</td>
+                  <td>RDF</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the title?</th>
+                  <td>rdfs:label</td>
+                  <td>RDF</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the subject?</th>
+                  <td>dcterms:subject</td>
+                  <td>DCMI Metadata Terms</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the summary of the content?</th>
+                  <td>dcterms:description</td>
+                  <td>DCMI Metadata Terms</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the language of the material?</th>
+                  <td>dcterms:language</td>
+                  <td>DCMI Metadata Terms</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who is the creator of the material?</th>
+                  <td>dc:agent</td>
+                  <td>DCMI Metadata Terms</td>
+                </tr>
+                <tr>
+                  <th scope="row">When was the material created?</th>
+                  <td>ebucore:idDateOfCreation</td>
+                  <td>DCMI Metadata Terms</td>
+                </tr>
+                <tr>
+                  <th scope="row">When was the material published?</th>
+                  <td>ebucore:publicationStartDateTime</td>
+                  <td>DCMI Metadata Terms</td>
+                </tr>
+                <tr>
+                  <th scope="row">Where was the material created?</th>
+                  <td>ebucore:location</td>
+                  <td>EBUCore</td>
+                </tr>
+                <tr>
+                  <th scope="row">Where was the material published?</th>
+                  <td>ebucore:hasPublicationRegion</td>
+                  <td>EBUCore</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who is the contributor?</th>
+                  <td>ebucore:Person</td>
+                  <td>EBUCore</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who owns the right to the material?</th>
+                  <td>ebucore:Rights</td>
+                  <td>EBUCore</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who is the producer of the material?</th>
+                  <td>ebucore:Organization</td>
+                  <td>EBUCore</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who are cast members in the material?</th>
+                  <td>ebucore:Cast</td>
+                  <td>EBUCore</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 id="archives"><b>Archival Documents/</b></h3>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Question</th>
+                  <th scope="col">Predicate</th>
+                  <th scope="col">Model</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">What is the type of entity?</th>
+                  <td>rdf:type</td>
+                  <td>RDF</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the title?</th>
+                  <td>rdfs:label</td>
+                  <td>RDF</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the subject?</th>
+                  <td>dcterms:subject</td>
+                  <td>DCMI Metadata Terms</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the summary of the content?</th>
+                  <td>dc:description</td>
+                  <td>DCMI Metadata Terms</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the language of the document?</th>
+                  <td>dcterms:language</td>
+                  <td>DCMI Metadata Terms</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the document identifier?</th>
+                  <td>dcterms:identifier</td>
+                  <td>DCMI Metadata Terms</td>
+                </tr>
+                <tr>
+                  <th scope="row">When was the document published?</th>
+                  <td>dcterms:issued</td>
+                  <td>DCMI Metadata Terms</td>
+                </tr>
+                <tr>
+                  <th scope="row">Where was the document published?</th>
+                  <td>dcterms:coverage</td>
+                  <td>DCMI Metadata Terms</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the format of the document?</th>
+                  <td>dcterms:format</td>
+                  <td>DCMI Metadata Terms</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the material of the document?</th>
+                  <td>dcterms:medium</td>
+                  <td>DCMI Metadata Terms</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who is the creator of the document?</th>
+                  <td>dcterms:creator</td>
+                  <td>DCMI Metadata Terms</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who is the contributor?</th>
+                  <td>dc:contributor</td>
+                  <td>DCMI Metadata Terms</td>
+                </tr>
+                <tr>
+                  <th scope="row">What does the document also contain?</th>
+                  <td>npg:hasIllustration</td>
+                  <td>NPG Core Ontology</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 id="artefacts"><b>Artefacts/</b></h3>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Question</th>
+                  <th scope="col">Predicate</th>
+                  <th scope="col">Model</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">What is the type of entity?</th>
+                  <td>rdf:type</td>
+                  <td>RDF</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the title?</th>
+                  <td>rdfs:label</td>
+                  <td>RDF</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the subject?</th>
+                  <td>1.1.Catalog Level</td>
+                  <td>CDWA</td>
+                </tr>
+                <tr>
+                  <th scope="row">When was the artefact published?</th>
+                  <td>4.2. Creation Date</td>
+                  <td>CDWA</td>
+                </tr>
+                <tr>
+                  <th scope="row">Where was the artefact published?</th>
+                  <td>29.2. Place Name CORE</td>
+                  <td>CDWA</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who owns rights to the artefact?</th>
+                  <td>ebucore:Rights</td>
+                  <td>EBUCore</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who is the provider of the artefact?</th>
+                  <td>ebucore:Organization</td>
+                  <td>EBUCore</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who is the contributor?</th>
+                  <td>28.2. Person Corporate Body Name CORE</td>
+                  <td>CDWA</td>
                 </tr>
               </tbody>
             </table>
