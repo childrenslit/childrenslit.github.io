@@ -821,6 +821,15 @@ figure.effect-julia:hover p {
 	margin-top: 55px;
 }
 
+.theoretical-margin {
+	margin-left: 55px;
+  margin-right: 55px;
+}
+
+.theoretical-margin p {
+	text-align: justify;
+}
+
 .studio-heading {
    font-size: 30px;
    font-weight: 700;
