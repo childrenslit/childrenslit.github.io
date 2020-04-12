@@ -17,37 +17,38 @@
 	</head>
 	<body>
 
- 	<!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-static-top" role="navigation">
-                <div class="container">
-                    <div class="navbar-header pull-left">
-                        <a href="" class="navbar-brand">
-                            <span class="brand-logo"><img src="images/logo.png" alt=""/></span>
-                        </a>
-                    </div>
-                    <div class="main-nav pull-right">
-                        <div class="button_container toggle">
-                            <span class="top"></span>
-                            <span class="middle"></span>
-                            <span class="bottom"></span>
-                        </div>
-                    </div>
-                    <div class="overlay" id="overlay">
-                        <nav class="overlay-menu">
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="items.html">Items</a></li>
-                                <li><a href="metadata.html">Metadata Alignment</a></li>
-                                <li><a href="theoretical.html">Theoretical Model</a></li>
-																<li><a href="conceptual.html">Conceptual Model</a></li>
-																<li><a href="representation.html">Data Representation</a></li>
-                                <li><a href="contact.html">Contact us</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div><!-- /container -->
-    </nav>
-    <!-- /Navigation -->
+    <!-- Navigation -->
+      <nav class="navbar navbar-custom navbar-static-top" role="navigation">
+                  <div class="container">
+                      <div class="navbar-header pull-left">
+                          <a href="" class="navbar-brand">
+                              <span class="brand-logo"><img src="images/logo.png" alt=""/></span>
+                          </a>
+                      </div>
+                      <div class="main-nav pull-right">
+                          <div class="button_container toggle">
+                              <span class="top"></span>
+                              <span class="middle"></span>
+                              <span class="bottom"></span>
+                          </div>
+                      </div>
+                      <div class="overlay" id="overlay">
+                          <nav class="overlay-menu">
+                              <ul>
+                                  <li><a href="index.html">Home</a></li>
+                                  <li><a href="items.html">Items</a></li>
+                                  <li><a href="metadata.html">Metadata Alignment</a></li>
+                                  <li><a href="theoretical.html">Theoretical Model</a></li>
+  																<li><a href="conceptual.html">Conceptual Model</a></li>
+  																<li><a href="representation.html">Data Representation</a></li>
+  																<li><a href="connection.html">Data Connection</a></li>
+                                  <li><a href="contact.html">Contact us</a></li>
+                              </ul>
+                          </nav>
+                      </div>
+                  </div><!-- /container -->
+      </nav>
+      <!-- /Navigation -->
 
 		 <!-- Intro -->
      <div class="container item-margin">
@@ -55,7 +56,7 @@
           <div class="col-md-5 col-sm-5 studio-margin wow fadeInUp animated">
             <h2 class="studio-heading">WHO
             <span>the people</span>
-            <img src="images/who_illustration.jpg" alt=""/>
+            <img src="images/who_illustration.jpg" width=350 alt=""/>
             </h2>
           </div>
           <div class="col-md-7 col-sm-7 studio-margin">
@@ -150,7 +151,7 @@
           <div class="col-md-5 col-sm-5 studio-margin wow fadeInUp animated">
             <h2 class="studio-heading">WHERE
             <span>the locations</span>
-            <img src="images/where_illustration.jpg" alt=""/>
+            <img src="images/where_illustration.jpg" width=350 alt=""/>
             </h2>
           </div>
           <div class="col-md-7 col-sm-7 studio-margin">
@@ -187,7 +188,7 @@
                 </tr>
                 <tr>
                   <th scope="row">What is the population of the place?</th>
-                  <td>n:population</td>
+                  <td>gn:population</td>
                   <td>GeoNames</td>
                 </tr>
                 <tr>
@@ -245,7 +246,7 @@
           <div class="col-md-5 col-sm-5 studio-margin wow fadeInUp animated">
             <h2 class="studio-heading">WHEN
             <span>the dates</span>
-            <img src="images/when_illustration.jpg" alt=""/>
+            <img src="images/when_illustration.jpg" width=350 alt=""/>
             </h2>
           </div>
           <div class="col-md-7 col-sm-7 studio-margin">
@@ -295,7 +296,7 @@
           <div class="col-md-5 col-sm-5 studio-margin wow fadeInUp animated">
             <h2 class="studio-heading">WHAT
             <span>the objects</span>
-            <img src="images/what_illustration.jpg" alt=""/>
+            <img src="images/what_illustration.jpg" width=350 alt=""/>
             </h2>
           </div>
           <div class="col-md-7 col-sm-7 studio-margin">
@@ -579,6 +580,11 @@
                   <th scope="row">What is the subject?</th>
                   <td>1.1.Catalog Level</td>
                   <td>CDWA</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the summary of the artefact?</th>
+                  <td>dcterms:description</td>
+                  <td>DCMI Metadata Terms</td>
                 </tr>
                 <tr>
                   <th scope="row">When was the artefact published?</th>

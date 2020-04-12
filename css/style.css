@@ -81,6 +81,11 @@ h1, h2, h3, h4, h5, h6 {
   padding: 4px;
 }
 
+.gist-data{
+    max-height:600px; // Any height
+    overflow-y: visible;
+}
+
 #inner-section {
    margin-top: 100px;
    padding-bottom: 110px;
@@ -348,8 +353,8 @@ h1, h2, h3, h4, h5, h6 {
 .overlay ul li {
     display: block;
     height: 15%;
-    height: calc(100% / 8);
-    min-height: 65px;
+    height: calc(100% / 10);
+    min-height: 55px;
     position: relative;
     opacity: 0;
 	font-size: 26px;

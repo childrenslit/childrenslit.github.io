@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>MarvelLOD Collaborations - Data Represe</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Main css  -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Animate css -->
+	<link rel="stylesheet" href="css/animate.css">
+    <!-- Google fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet'>
+
+	</head>
+	<body>
+
+    <!-- Navigation -->
+      <nav class="navbar navbar-custom navbar-static-top" role="navigation">
+                  <div class="container">
+                      <div class="navbar-header pull-left">
+                          <a href="" class="navbar-brand">
+                              <span class="brand-logo"><img src="images/logo.png" alt=""/></span>
+                          </a>
+                      </div>
+                      <div class="main-nav pull-right">
+                          <div class="button_container toggle">
+                              <span class="top"></span>
+                              <span class="middle"></span>
+                              <span class="bottom"></span>
+                          </div>
+                      </div>
+                      <div class="overlay" id="overlay">
+                          <nav class="overlay-menu">
+                              <ul>
+                                  <li><a href="index.html">Home</a></li>
+                                  <li><a href="items.html">Items</a></li>
+                                  <li><a href="metadata.html">Metadata Alignment</a></li>
+                                  <li><a href="theoretical.html">Theoretical Model</a></li>
+  																<li><a href="conceptual.html">Conceptual Model</a></li>
+  																<li><a href="representation.html">Data Representation</a></li>
+  																<li><a href="connection.html">Data Connection</a></li>
+                                  <li><a href="contact.html">Contact us</a></li>
+                              </ul>
+                          </nav>
+                      </div>
+                  </div><!-- /container -->
+      </nav>
+      <!-- /Navigation -->
+
+    <div class="container item-margin">
+       <div class="row">
+         <div class="col-md-3 col-sm-3 studio-margin wow fadeInUp animated">
+           <h2 class="studio-heading">Data Representation
+           <span>using the conceptual model</span>
+           </h2>
+         </div>
+         <div class="col-md-3 col-sm-3 studio-margin">
+           <div class="text-studio">
+           <h3><b>Quick navigation:</b></h3>
+           <ul class="list-group">
+           <li>People
+             <ul>
+               <li><a href="#dahl">Roald Dahl</a></li>
+               <li><a href="#blake">Quentin Blake</a></li>
+             </ul>
+           </li>
+           <li>Places
+             <ul>
+               <li><a href="#london">London</a></li>
+             </ul>
+           </li>
+           <li>Dates
+             <ul>
+               <li><a href="#nineteen76">1976</a></li>
+             </ul>
+           </li>
+           </ul>
+           </div>
+         </div>
+         <div class="col-md-3 col-sm-3 studio-margin">
+           <div class="text-studio">
+           <h3>‌</h3>
+           <ul class="list-group">
+             <li>Objects
+               <ul>
+                 <li><a href="#matilda">Matilda</a></li>
+                 <li><a href="#bfg">The BFG</a></li>
+                 <li><a href="#rhymes">Revolting Rhymes</a></li>
+                 <li><a href="#abc">Quentin Blake's ABC</a></li>
+                 <li><a href="#documentary">The Marvellous World of Roald Dahl</a></li>
+               </ul>
+             </li>
+           </ul>
+           </div>
+         </div>
+         <div class="col-md-3 col-sm-3 studio-margin">
+           <div class="text-studio">
+           <h3>‌</h3>
+           <ul class="list-group">
+             <li style="list-style-type: none">
+               <ul>
+                 <li><a href="#rhymes-series">Revolting Rhymes TV Series</a></li>
+                 <li><a href="#newspaper">A Marvellous Cure for the Doldrums</a></li>
+                 <li><a href="#stamp">Christmas Stamp</a></li>
+                 <li><a href="#statue">Matilda and Trump</a></li>
+                 <li><a href="#sandal">The BFG's Sandal</a></li>
+               </ul>
+             </li>
+           </ul>
+           </div>
+         </div>
+      </div>
+    </div>
+
+    <div class="container">
+         <div class="row">
+           <div class="line-symbol"></div>
+         </div>
+    </div>
+
+		 <!-- Intro -->
+     <div class="container">
+        <div class="row final-row">
+          <div class="col-md-5 col-sm-5 studio-margin wow fadeInUp animated">
+            <h2 class="studio-heading" id="dahl">Roald Dahl
+            <span>the writer</span>
+            <img src="images/dahl.jpg" width=350 alt=""/>
+            </h2>
+          </div>
+          <div class="col-md-7 col-sm-7 studio-margin">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Question</th>
+                  <th scope="col">Predicate</th>
+                  <th scope="col">Object</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">What is the type of entity?</th>
+                  <td>Person</td>
+                  <td>RDF</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the person’s name?</th>
+                  <td>foaf:name</td>
+                  <td>Roald Dahl</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the person’s gender?</th>
+                  <td>foaf:gender</td>
+                  <td>Male</td>
+                </tr>
+                <tr>
+                  <th scope="row">Where was the person born?</th>
+                  <td>person:placeofBirth</td>
+                  <td>Llandaff, Cardiff, Wales</td>
+                </tr>
+                <tr>
+                  <th scope="row">Where did the person die?</th>
+                  <td>person:placeofDeath</td>
+                  <td>Oxford, England</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the person’t citizenship?</th>
+                  <td>person:citizenship</td>
+                  <td>British</td>
+                </tr>
+                <tr>
+                  <th scope="row">When was the person born?</th>
+                  <td>core:dateOfBirth</td>
+                  <td>13 September 1916</td>
+                </tr>
+                <tr>
+                  <th scope="row">When did the person die?</th>
+                  <td>core:dateOfDeath</td>
+                  <td>23 November 1990</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the person's occupation?</th>
+                  <td>core:occupation</td>
+                  <td>Writer</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the person known for?</th>
+                  <td>core:knownFor</td>
+                  <td>Children’s books</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who is the person notably associated with?</th>
+                  <td>core:notablyAssociatedWith</td>
+                  <td>Quentin Blake</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the person a primary topic of?</th>
+                  <td>foaf:isPrimaryTopicOf</td>
+                  <td>The Marvellous World of Roald Dahl</td>
+                </tr>
+                <tr>
+                  <th scope="row">Which resource refers to the same person?</th>
+                  <td>owl:sameAs</td>
+                  <td>viaf:108159131</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="container">
+             <div class="row">
+               <div class="line-symbol"></div>
+             </div>
+        </div>
+
+        <div class="row final-row">
+          <div class="col-md-5 col-sm-5 studio-margin wow fadeInUp animated">
+            <h2 class="studio-heading" id="blake">Quentin Blake
+            <span>the illustrator</span>
+            <img src="images/blake.jpg" width=350 alt=""/>
+            </h2>
+          </div>
+          <div class="col-md-7 col-sm-7 studio-margin">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Question</th>
+                  <th scope="col">Predicate</th>
+                  <th scope="col">Model</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">What is the type of entity?</th>
+                  <td>rdf:type</td>
+                  <td>RDF</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the subject?</th>
+                  <td>dcterms:subject</td>
+                  <td>DCMI Metadata Terms</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the title/controlled form of the name?</th>
+                  <td>rdfs:label</td>
+                  <td>RDF</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is an alternate name of the book?</th>
+                  <td>schema:alternateName</td>
+                  <td>Schema</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the identifier? </th>
+                  <td>dcterms:identifier</td>
+                  <td>DCMI Metadata Terms</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is a summary of the content?</th>
+                  <td>dcterms:description</td>
+                  <td>DCMI Metadata Terms</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who is the author of the book?</th>
+                  <td>schema:author</td>
+                  <td>Schema</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who is the illustrator of the book?</th>
+                  <td>schema:illustrator</td>
+                  <td>Schema</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the book genre?</th>
+                  <td>dbpedia-owl:LiteraryGenre</td>
+                  <td>DBpedia</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who appears in the content?</th>
+                  <td>schema:Character</td>
+                  <td>Schema</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the character description?</th>
+                  <td>dc:description</td>
+                  <td>DCMI Metadata Terms</td>
+                </tr>
+                <tr>
+                  <th scope="row">Which resource has the concept as primary resource?</th>
+                  <td>foaf:isPrimaryTopicOf</td>
+                  <td>FOAF</td>
+                </tr>
+                <tr>
+                  <th scope="row">Where has the book been published?</th>
+                  <td>dc:coverage</td>
+                  <td>DCMI Metadata Terms</td>
+                </tr>
+                <tr>
+                  <th scope="row">When has the book been published?</th>
+                  <td>dcterms:issued </td>
+                  <td>DCMI Metadata Terms</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who is the publisher?</th>
+                  <td>schema:publisher</td>
+                  <td>Schema</td>
+                </tr>
+                <tr>
+                  <th scope="row">Which resources refer to the same concept?</th>
+                  <td>owl:sameAs</td>
+                  <td>OWL</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="container">
+             <div class="row">
+               <div class="line-symbol"></div>
+             </div>
+        </div>
+
+        <div class="row final-row">
+          <div class="col-md-5 col-sm-5 studio-margin wow fadeInUp animated">
+            <h2 class="studio-heading" id="matilda">Matilda
+            <span>book</span>
+            <img src="images/matilda_book.jpg" width=350 alt=""/>
+            </h2>
+          </div>
+          <div class="col-md-7 col-sm-7 studio-margin">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Question</th>
+                  <th scope="col">Predicate</th>
+                  <th scope="col">Object</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">What is the type of entity?</th>
+                  <td>rdf:type</td>
+                  <td>RDF</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the subject?</th>
+                  <td>dcterms:subject</td>
+                  <td>Children's literature</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the title/controlled form of the name?</th>
+                  <td>rdfs:label</td>
+                  <td>Matilda</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the identifier? </th>
+                  <td>dcterms:identifier</td>
+                  <td>ISBN: 0224025724</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is a summary of the content?</th>
+                  <td>dcterms:description</td>
+                  <td>Matilda is an exceptional girl, but her parents think she is just a nuisance. When one day she is attacked by her odious headmistress, Miss Trunchbull, Matilda suddenly discovers she has a remarkable power with which to avenge herself. </td>
+                </tr>
+                <tr>
+                  <th scope="row">Who is the author of the book?</th>
+                  <td>schema:author</td>
+                  <td>Roald Dahl</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who is the illustrator of the book?</th>
+                  <td>schema:illustrator</td>
+                  <td>Quentin Blake</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the book genre?</th>
+                  <td>dbpedia-owl:LiteraryGenre</td>
+                  <td>Children’s, Fantasy</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who appears in the content?</th>
+                  <td>schema:Character</td>
+                  <td>Matilda Wormwood</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the character description?</th>
+                  <td>dc:description</td>
+                  <td>Matilda Wormwood, also known by her adoptive name Matilda Honey is the title character of the bestselling children’s novel Matilda by Roald Dahl. She is a highly precocious six and a half year old girl who has a passion for reading books. </td>
+                </tr>
+                <tr>
+                  <th scope="row">Who appears in the content?</th>
+                  <td>schema:Character</td>
+                  <td>Miss Agatha Trunchbull</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the character description?</th>
+                  <td>dc:description</td>
+                  <td>Miss Agatha Trunchbull also known as Miss Trunchbulll, or simply the Trunchbull, the fictional headmistress of Crunchem Hall Primary School is the main antagonist in Roald Dahl’s 1988 novel Matilda. </td>
+                </tr>
+                <tr>
+                  <th scope="row">Which resource has the concept as primary resource?</th>
+                  <td>foaf:isPrimaryTopicOf</td>
+                  <td>Matilda and Trump Sculpture</td>
+                </tr>
+                <tr>
+                  <th scope="row">Where has the book been published?</th>
+                  <td>dc:coverage</td>
+                  <td>London</td>
+                </tr>
+                <tr>
+                  <th scope="row">When has the book been published?</th>
+                  <td>dcterms:issued </td>
+                  <td>1988</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who is the publisher?</th>
+                  <td>schema:publisher</td>
+                  <td>Jonathan Cape</td>
+                </tr>
+                <tr>
+                  <th scope="row">Which resources refer to the same concept?</th>
+                  <td>owl:sameAs</td>
+                  <td>---</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="container">
+             <div class="row">
+               <div class="line-symbol"></div>
+             </div>
+        </div>
+
+        <div class="row final-row">
+          <div class="col-md-5 col-sm-5 studio-margin wow fadeInUp animated">
+            <h2 class="studio-heading" id="bfg">The BFG
+            <span>book</span>
+            <img src="images/bfg_book.jpg" width=350 alt=""/>
+            </h2>
+          </div>
+          <div class="col-md-7 col-sm-7 studio-margin">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Question</th>
+                  <th scope="col">Predicate</th>
+                  <th scope="col">Object</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">What is the type of entity?</th>
+                  <td>rdf:type</td>
+                  <td>RDF</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the subject?</th>
+                  <td>dcterms:subject</td>
+                  <td>Giants—Fiction, Orphans—Fiction, Juvenile Fiction</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the title/controlled form of the name?</th>
+                  <td>rdfs:label</td>
+                  <td>The BFG</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is an alternate name of the book?</th>
+                  <td>schema:alternateName</td>
+                  <td>The Big Friendly Giant </td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the identifier? </th>
+                  <td>dcterms:identifier</td>
+                  <td>ISBN: 0224020404</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is a summary of the content?</th>
+                  <td>dcterms:description</td>
+                  <td>Kidsnatched from her orphanage by the BFG (Big Friendly Giant) who spends his life blowing happy dreams to children, Sophie concots with him a plan to save the world from nine other man-gobbling canny bull giants. </td>
+                </tr>
+                <tr>
+                  <th scope="row">Who is the author of the book?</th>
+                  <td>schema:author</td>
+                  <td>Roald Dahl</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who is the illustrator of the book?</th>
+                  <td>schema:illustrator</td>
+                  <td>Quentin Blake</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the book genre?</th>
+                  <td>dbpedia-owl:LiteraryGenre</td>
+                  <td>Children’s, Fantasy</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who appears in the content?</th>
+                  <td>schema:Character</td>
+                  <td>Sophie</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the character description?</th>
+                  <td>dc:description</td>
+                  <td>The imaginative, creative and kind-hearted protagonist of the story who becomes a brave international heroine. Named after Dahl’s feisty kind-hearted mother.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who appears in the content?</th>
+                  <td>schema:Character</td>
+                  <td>The BFG</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the character description?</th>
+                  <td>dc:description</td>
+                  <td>A friendly 24-foot-tall giant who has superhuman hearing and immense speed. His main occupation is the collection and distribution of good dreams to children. </td>
+                </tr>
+                <tr>
+                  <th scope="row">Which resource has the concept as primary resource?</th>
+                  <td>foaf:isPrimaryTopicOf</td>
+                  <td>Matilda and Trump Sculpture</td>
+                </tr>
+                <tr>
+                  <th scope="row">Where has the book been published?</th>
+                  <td>dc:coverage</td>
+                  <td>London</td>
+                </tr>
+                <tr>
+                  <th scope="row">When has the book been published?</th>
+                  <td>dcterms:issued </td>
+                  <td>1982</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who is the publisher?</th>
+                  <td>schema:publisher</td>
+                  <td>Jonathan Cape</td>
+                </tr>
+                <tr>
+                  <th scope="row">Which resources refer to the same concept?</th>
+                  <td>owl:sameAs</td>
+                  <td>---</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="container">
+             <div class="row">
+               <div class="line-symbol"></div>
+             </div>
+        </div>
+
+        <div class="row final-row">
+          <div class="col-md-5 col-sm-5 studio-margin wow fadeInUp animated">
+            <h2 class="studio-heading" id="rhymes">Revolting Rhymes
+            <span>book</span>
+            <img src="images/rhymes_book.jpg" width=350 alt=""/>
+            </h2>
+          </div>
+          <div class="col-md-7 col-sm-7 studio-margin">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Question</th>
+                  <th scope="col">Predicate</th>
+                  <th scope="col">Object</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">What is the type of entity?</th>
+                  <td>rdf:type</td>
+                  <td>RDF</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the subject?</th>
+                  <td>dcterms:subject</td>
+                  <td>Fairytales—Adaptations, Children’s poetry, Nonsense verses</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the title/controlled form of the name?</th>
+                  <td>rdfs:label</td>
+                  <td>Revolting Rhymes</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the identifier? </th>
+                  <td>dcterms:identifier</td>
+                  <td>ISBN: 0224029320</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is a summary of the content?</th>
+                  <td>dcterms:description</td>
+                  <td>A stomach churning collection of witty rhymes. </td>
+                </tr>
+                <tr>
+                  <th scope="row">Who is the author of the book?</th>
+                  <td>schema:author</td>
+                  <td>Roald Dahl</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who is the illustrator of the book?</th>
+                  <td>schema:illustrator</td>
+                  <td>Quentin Blake</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the book genre?</th>
+                  <td>dbpedia-owl:LiteraryGenre</td>
+                  <td>Children’s poetry, satire</td>
+                </tr>
+                <tr>
+                  <th scope="row">Which resource has the concept as primary resource?</th>
+                  <td>foaf:isPrimaryTopicOf</td>
+                  <td>Revolting Rhymes Animated Series (OVA)</td>
+                </tr>
+                <tr>
+                  <th scope="row">Where has the book been published?</th>
+                  <td>dc:coverage</td>
+                  <td>London</td>
+                </tr>
+                <tr>
+                  <th scope="row">When has the book been published?</th>
+                  <td>dcterms:issued </td>
+                  <td>1982</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who is the publisher?</th>
+                  <td>schema:publisher</td>
+                  <td>Jonathan Cape</td>
+                </tr>
+                <tr>
+                  <th scope="row">Which resources refer to the same concept?</th>
+                  <td>owl:sameAs</td>
+                  <td>---</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="container">
+             <div class="row">
+               <div class="line-symbol"></div>
+             </div>
+        </div>
+
+        <div class="row final-row">
+          <div class="col-md-5 col-sm-5 studio-margin wow fadeInUp animated">
+            <h2 class="studio-heading" id="abc">Quentin Blake's ABC
+            <span>book</span>
+            <img src="images/abc.jpg" width=350 alt=""/>
+            </h2>
+          </div>
+          <div class="col-md-7 col-sm-7 studio-margin">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Question</th>
+                  <th scope="col">Predicate</th>
+                  <th scope="col">Object</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">What is the type of entity?</th>
+                  <td>rdf:type</td>
+                  <td>RDF</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the subject?</th>
+                  <td>dcterms:subject</td>
+                  <td>English Language, Alphabet, Pictorial Works, Juvenile Literature, Alphabet Books</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the title/controlled form of the name?</th>
+                  <td>rdfs:label</td>
+                  <td>Quentin Blake’s ABC</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is an alternate name of the book?</th>
+                  <td>schema:alternateName</td>
+                  <td>ABC</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the identifier? </th>
+                  <td>dcterms:identifier</td>
+                  <td>ISBN: 9781849416887</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is a summary of the content?</th>
+                  <td>dcterms:description</td>
+                  <td>A is for Apples, some green and some red, B is for Breakfast we're having in bed.' With a simple rhyming text and characteristically brilliant illustrations from Quentin Blake, this wonderful "ABC" is an absolute must for young children just getting to grips with their alphabet.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who is the author of the book?</th>
+                  <td>schema:author</td>
+                  <td>Quentin Blake</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who is the illustrator of the book?</th>
+                  <td>schema:illustrator</td>
+                  <td>Quentin Blake</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the book genre?</th>
+                  <td>dbpedia-owl:LiteraryGenre</td>
+                  <td>Children’s literature</td>
+                </tr>
+                <tr>
+                  <th scope="row">Where has the book been published?</th>
+                  <td>dc:coverage</td>
+                  <td>London</td>
+                </tr>
+                <tr>
+                  <th scope="row">When has the book been published?</th>
+                  <td>dcterms:issued </td>
+                  <td>1989</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who is the publisher?</th>
+                  <td>schema:publisher</td>
+                  <td>Jonathan Cape</td>
+                </tr>
+                <tr>
+                  <th scope="row">Which resources refer to the same concept?</th>
+                  <td>owl:sameAs</td>
+                  <td>---</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      <div class="container">
+           <div class="row">
+             <div class="line-symbol"></div>
+           </div>
+      </div>
+
+      <div class="row final-row">
+        <div class="col-md-5 col-sm-5 studio-margin wow fadeInUp animated">
+          <h2 class="studio-heading" id="documentary">The Marvellous World of Roald Dahl
+          <span>documentary</span>
+          <img src="images/documentary.png" width=350 alt=""/>
+          </h2>
+        </div>
+        <div class="col-md-7 col-sm-7 studio-margin">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Question</th>
+                <th scope="col">Predicate</th>
+                <th scope="col">Object</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">What is the type of entity?</th>
+                <td>rdf:type</td>
+                <td>Documentary film</td>
+              </tr>
+              <tr>
+                <th scope="row">What is the title?</th>
+                <td>rdfs:label</td>
+                <td>The Marvellous World of Roald Dahl</td>
+              </tr>
+              <tr>
+                <th scope="row">What is the subject?</th>
+                <td>dcterms:subject</td>
+                <td>Roald Dahl, his story and collaboration with Quentin Blake</td>
+              </tr>
+              <tr>
+                <th scope="row">What is the summary of the content?</th>
+                <td>dcterms:description</td>
+                <td>A documentary film about Roald Dahl, his works</td>
+              </tr>
+              <tr>
+                <th scope="row">What is the language of the material?</th>
+                <td>dcterms:language</td>
+                <td>English</td>
+              </tr>
+              <tr>
+                <th scope="row">Who is the creator of the material?</th>
+                <td>dc:agent</td>
+                <td>Andrew Thompson</td>
+              </tr>
+              <tr>
+                <th scope="row">When was the material created?</th>
+                <td>ebucore:idDateOfCreation</td>
+                <td>2016</td>
+              </tr>
+              <tr>
+                <th scope="row">When was the material published?</th>
+                <td>ebucore:publicationStartDateTime</td>
+                <td>England</td>
+              </tr>
+              <tr>
+                <th scope="row">Where was the material created?</th>
+                <td>ebucore:location</td>
+                <td>British Broadcasting Corporation (BBC)</td>
+              </tr>
+              <tr>
+                <th scope="row">Where was the material published?</th>
+                <td>ebucore:hasPublicationRegion</td>
+                <td>British Broadcasting Corporation (BBC)</td>
+              </tr>
+              <tr>
+                <th scope="row">Who owns the right to the material?</th>
+                <td>ebucore:Rights</td>
+                <td>British Broadcasting Corporation (BBC)</td>
+              </tr>
+              <tr>
+                <th scope="row">Who is the producer of the material?</th>
+                <td>ebucore:Organization</td>
+                <td>British Broadcasting Corporation (BBC)</td>
+              </tr>
+              <tr>
+                <th scope="row">Who are cast members in the material?</th>
+                <td>ebucore:Cast</td>
+                <td>Roald Dahl, Quentin Blake</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+           <div class="row">
+             <div class="line-symbol"></div>
+           </div>
+      </div>
+
+      <div class="row final-row">
+        <div class="col-md-5 col-sm-5 studio-margin wow fadeInUp animated">
+          <h2 class="studio-heading" id="rhymes-series">Revolting Rhymes
+          <span>animated TV series</span>
+          <img src="images/rhymes_series.jpg" width=350 alt=""/>
+          </h2>
+        </div>
+        <div class="col-md-7 col-sm-7 studio-margin">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Question</th>
+                <th scope="col">Predicate</th>
+                <th scope="col">Object</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">What is the type of entity?</th>
+                <td>rdf:type</td>
+                <td>Animated television series</td>
+              </tr>
+              <tr>
+                <th scope="row">What is the title?</th>
+                <td>rdfs:label</td>
+                <td>Revolting Rhymes</td>
+              </tr>
+              <tr>
+                <th scope="row">What is the summary of the content?</th>
+                <td>dcterms:description</td>
+                <td>English-German animated television series based on the book “Revolting Rhymes” by Roald Dahl.</td>
+              </tr>
+              <tr>
+                <th scope="row">What is the language of the material?</th>
+                <td>dcterms:language</td>
+                <td>English, Swedish</td>
+              </tr>
+              <tr>
+                <th scope="row">Who is the creator of the material?</th>
+                <td>dc:agent</td>
+                <td>Jakob Schuh, Jan Lachauer</td>
+              </tr>
+              <tr>
+                <th scope="row">When was the material created?</th>
+                <td>ebucore:idDateOfCreation</td>
+                <td>December 26, 2016</td>
+              </tr>
+              <tr>
+                <th scope="row">When was the material published?</th>
+                <td>ebucore:publicationStartDateTime</td>
+                <td>England, Germany</td>
+              </tr>
+              <tr>
+                <th scope="row">Where was the material created?</th>
+                <td>ebucore:location</td>
+                <td>England, Germany</td>
+              </tr>
+              <tr>
+                <th scope="row">Where was the material published?</th>
+                <td>ebucore:hasPublicationRegion</td>
+                <td>International distribution </td>
+              </tr>
+              <tr>
+                <th scope="row">Who is the producer of the material?</th>
+                <td>ebucore:Organization</td>
+                <td>Magic Light Pictures, Triggerfish Animation</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+     <div class="container">
+          <div class="row">
+            <div class="line-symbol"></div>
+          </div>
+     </div>
+
+     <div class="row final-row">
+       <div class="col-md-5 col-sm-5 studio-margin wow fadeInUp animated">
+         <h2 class="studio-heading" id="newspaper">A Marvellous Cure for the Doldrums
+         <span>newspaper article</span>
+         <img src="images/newspaper.png" width=350 alt=""/>
+         </h2>
+       </div>
+       <div class="col-md-7 col-sm-7 studio-margin">
+         <table class="table table-bordered">
+           <thead>
+             <tr>
+               <th scope="col">Question</th>
+               <th scope="col">Predicate</th>
+               <th scope="col">Object</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <th scope="row">What is the type of entity?</th>
+               <td>rdf:type</td>
+               <td>Newspaper article (review)</td>
+             </tr>
+             <tr>
+               <th scope="row">What is the title?</th>
+               <td>rdfs:label</td>
+               <td>A Marvellous Cure for the Doldrums</td>
+             </tr>
+             <tr>
+               <th scope="row">What is the subject?</th>
+               <td>dcterms:subject</td>
+               <td>“George’s Marvellous Medicine” Review by Primary school students</td>
+             </tr>
+             <tr>
+               <th scope="row">What is the summary of the content?</th>
+               <td>dc:description</td>
+               <td>A review of the book “George’s Marvellous Medicine” by Roald Dahl and illustrated by Quentin Blake published in The Canberra Times in Australia in 1981</td>
+             </tr>
+             <tr>
+               <th scope="row">What is the language of the document?</th>
+               <td>dcterms:language</td>
+               <td>English</td>
+             </tr>
+             <tr>
+               <th scope="row">When was the document published?</th>
+               <td>dcterms:issued</td>
+               <td>September 27, 1981</td>
+             </tr>
+             <tr>
+               <th scope="row">Where was the document published?</th>
+               <td>dcterms:coverage</td>
+               <td>The Canberra Times</td>
+             </tr>
+             <tr>
+               <th scope="row">What is the format of the document?</th>
+               <td>dcterms:format</td>
+               <td>Paper article</td>
+             </tr>
+             <tr>
+               <th scope="row">What is the material of the document?</th>
+               <td>dcterms:medium</td>
+               <td>Paper</td>
+             </tr>
+             <tr>
+               <th scope="row">Who is the creator of the document?</th>
+               <td>dcterms:creator</td>
+               <td>Jonathan Cape</td>
+             </tr>
+             <tr>
+               <th scope="row">What does the document also contain?</th>
+               <td>npg:hasIllustration</td>
+               <td>One of the illustrations appearing in the book “George’s Marvellous Medicine” </td>
+             </tr>
+           </tbody>
+         </table>
+       </div>
+     </div>
+
+     <div class="container">
+          <div class="row">
+            <div class="line-symbol"></div>
+          </div>
+     </div>
+
+     <div class="row final-row">
+       <div class="col-md-5 col-sm-5 studio-margin wow fadeInUp animated">
+         <h2 class="studio-heading" id="stamp">Christmas Stamp
+         <span>postage stamp</span>
+         <img src="images/stamp.jpg" width=350 alt=""/>
+         </h2>
+       </div>
+       <div class="col-md-7 col-sm-7 studio-margin">
+         <table class="table table-bordered">
+           <thead>
+             <tr>
+               <th scope="col">Question</th>
+               <th scope="col">Predicate</th>
+               <th scope="col">Object</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <th scope="row">What is the type of entity?</th>
+               <td>rdf:type</td>
+               <td>A special edition postage stamp</td>
+             </tr>
+             <tr>
+               <th scope="row">What is the title?</th>
+               <td>rdfs:label</td>
+               <td>Bob Cratchit and Tiny Tim</td>
+             </tr>
+             <tr>
+               <th scope="row">What is the summary of the content?</th>
+               <td>dc:description</td>
+               <td>A special collection of Christmas stamps issued by the Royal Mail in 1993 to commemorate the 150 years since its original publication. Stamps illustrated by Quentin Blake</td>
+             </tr>
+             <tr>
+               <th scope="row">When was the document published?</th>
+               <td>dcterms:issued</td>
+               <td>1993</td>
+             </tr>
+             <tr>
+               <th scope="row">What is the format of the document?</th>
+               <td>dcterms:format</td>
+               <td>Postage stamp</td>
+             </tr>
+             <tr>
+               <th scope="row">What is the material of the document?</th>
+               <td>dcterms:medium</td>
+               <td>Paper</td>
+             </tr>
+             <tr>
+               <th scope="row">Who is the creator of the document?</th>
+               <td>dcterms:creator</td>
+               <td>Royal Mail</td>
+             </tr>
+             <tr>
+               <th scope="row">Who is the contributor?</th>
+               <td>dc:contributor</td>
+               <td>Quentin Blake</td>
+             </tr>
+             <tr>
+               <th scope="row">What does the document also contain?</th>
+               <td>npg:hasIllustration</td>
+               <td>Illustrations by Quentin Blake</td>
+             </tr>
+           </tbody>
+         </table>
+       </div>
+     </div>
+
+     <div class="container">
+          <div class="row">
+            <div class="line-symbol"></div>
+          </div>
+     </div>
+
+     <div class="row final-row">
+       <div class="col-md-5 col-sm-5 studio-margin wow fadeInUp animated">
+         <h2 class="studio-heading" id="sandal">BFG's Sandal
+         <span>artefact</span>
+         <img src="images/BFG_sandal.jpg" width=350 alt=""/>
+         </h2>
+       </div>
+       <div class="col-md-7 col-sm-7 studio-margin">
+         <table class="table table-bordered">
+           <thead>
+             <tr>
+               <th scope="col">Question</th>
+               <th scope="col">Predicate</th>
+               <th scope="col">Object</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <th scope="row">What is the type of entity?</th>
+               <td>rdf:type</td>
+               <td>Leather sandal</td>
+             </tr>
+             <tr>
+               <th scope="row">What is the title?</th>
+               <td>rdfs:label</td>
+               <td>BFG’s sandal</td>
+             </tr>
+             <tr>
+               <th scope="row">What is the summary of the artefact?</th>
+               <td>dcterms:description</td>
+               <td>Pair of brown leather sandals formerly belonging to Roald Dahl were sent to Quentin Blake as an inspiration when the two were collaborating to create illustrations for The BFG </td>
+             </tr>
+             <tr>
+               <th scope="row">When was the artefact published?</th>
+               <td>4.2. Creation Date</td>
+               <td>The sandal was sent to Quentin Blake in 1982</td>
+             </tr>
+             <tr>
+               <th scope="row">Where was the artefact published?</th>
+               <td>29.2. Place Name CORE</td>
+               <td>England</td>
+             </tr>
+             <tr>
+               <th scope="row">Who is the provider of the artefact?</th>
+               <td>ebucore:Organization</td>
+               <td>The Roald Dahl Archive</td>
+             </tr>
+             <tr>
+               <th scope="row">Who is the contributor?</th>
+               <td>28.2. Person Corporate Body Name CORE</td>
+               <td>Roald Dahl, Quentin Blake</td>
+             </tr>
+           </tbody>
+         </table>
+       </div>
+     </div>
+
+     <div class="container">
+          <div class="row">
+            <div class="line-symbol"></div>
+          </div>
+     </div>
+
+     <div class="row final-row">
+       <div class="col-md-5 col-sm-5 studio-margin wow fadeInUp animated">
+         <h2 class="studio-heading" id="statue">Matilda and Trump
+         <span>sculpture</span>
+         <img src="images/matilda_statue.jpg" width=350 alt=""/>
+         </h2>
+       </div>
+       <div class="col-md-7 col-sm-7 studio-margin">
+         <table class="table table-bordered">
+           <thead>
+             <tr>
+               <th scope="col">Question</th>
+               <th scope="col">Predicate</th>
+               <th scope="col">Object</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <th scope="row">What is the type of entity?</th>
+               <td>rdf:type</td>
+               <td>Sculpture</td>
+             </tr>
+             <tr>
+               <th scope="row">What is the title?</th>
+               <td>rdfs:label</td>
+               <td>Matilda facing Donald Trump</td>
+             </tr>
+             <tr>
+               <th scope="row">What is the subject?</th>
+               <td>1.1.Catalog Level</td>
+               <td>Visual art</td>
+             </tr>
+             <tr>
+               <th scope="row">What is the summary of the artefact?</th>
+               <td>dcterms:description</td>
+               <td>Roald Dahl’s character Matilda is standing face-to-face with the U.S. President Donald Trump</td>
+             </tr>
+             <tr>
+               <th scope="row">When was the artefact published?</th>
+               <td>4.2. Creation Date</td>
+               <td>October 16, 2018</td>
+             </tr>
+             <tr>
+               <th scope="row">Where was the artefact published?</th>
+               <td>29.2. Place Name CORE</td>
+               <td>Great Missenden, North-West London</td>
+             </tr>
+             <tr>
+               <th scope="row">Who owns rights to the artefact?</th>
+               <td>ebucore:Rights</td>
+               <td>Roald Dahl Museum and Story Centre</td>
+             </tr>
+             <tr>
+               <th scope="row">Who is the provider of the artefact?</th>
+               <td>ebucore:Organization</td>
+               <td>Getty Images</td>
+             </tr>
+             <tr>
+               <th scope="row">Who is the contributor?</th>
+               <td>28.2. Person Corporate Body Name CORE</td>
+               <td>Unknown</td>
+             </tr>
+           </tbody>
+         </table>
+       </div>
+     </div>
+
+        <div class="container">
+             <div class="row">
+               <div class="line-symbol"></div>
+             </div>
+        </div>
+
+        <div class="row final-row">
+          <div class="col-md-5 col-sm-5 studio-margin wow fadeInUp animated">
+            <h2 class="studio-heading" id="london">London
+            <span>city</span>
+            <img src="images/london.jpg" width=350 alt=""/>
+            </h2>
+          </div>
+          <div class="col-md-7 col-sm-7 studio-margin">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Question</th>
+                  <th scope="col">Predicate</th>
+                  <th scope="col">Object</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">What is the type of entity?</th>
+                  <td>rdf:type</td>
+                  <td>Place</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the name of the place?</th>
+                  <td>gn:name</td>
+                  <td>London</td>
+                </tr>
+                <tr>
+                  <th scope="row">In which country is the place located?</th>
+                  <td>gn:countryCode</td>
+                  <td>United Kingdom</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the population of the place?</th>
+                  <td>gn:population</td>
+                  <td>7556900</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the latitude?</th>
+                  <td>WGS84_POS:lat</td>
+                  <td>51.50853</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the longitude?</th>
+                  <td>WGS84_POS:long</td>
+                  <td>-0.12574</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the map location?</th>
+                  <td>gn:locationMap</td>
+                  <td>https://www.geonames.org/2643743/london.html</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the related Wikipedia page?</th>
+                  <td>dbo:wikiPageExternalLink</td>
+                  <td>https://en.wikipedia.org/wiki/London</td>
+                </tr>
+                <tr>
+                  <th scope="row">Which resource has the place as primary topic?</th>
+                  <td>foaf:primaryTopic</td>
+                  <td>https://en.wikipedia.org/wiki/London</td>
+                </tr>
+                <tr>
+                  <th scope="row">Which resources refers to the same place?</th>
+                  <td>owl:sameAs</td>
+                  <td>https://www.wikidata.org/wiki/Q84</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="container">
+             <div class="row">
+               <div class="line-symbol"></div>
+             </div>
+        </div>
+
+        <div class="row final-row">
+          <div class="col-md-5 col-sm-5 studio-margin wow fadeInUp animated">
+            <h2 class="studio-heading" id="nineteen76">1976
+            <span>year</span>
+            </h2>
+          </div>
+          <div class="col-md-7 col-sm-7 studio-margin">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Question</th>
+                  <th scope="col">Predicate</th>
+                  <th scope="col">Object</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">What is the type of entity?</th>
+                  <td>rdf:type</td>
+                  <td>Date</td>
+                </tr>
+                <tr>
+                  <th scope="row">In which format is it expressed?</th>
+                  <td>ead:date</td>
+                  <td>YYYY</td>
+                </tr>
+                <tr>
+                  <th scope="row">What is the date’s relation with the concept?</th>
+                  <td>EAC-CPF:resourceRelationType</td>
+                  <td>Starting Date</td>
+                </tr>
+                <tr>
+                  <th scope="row">Which resource has the date as primary topic?</th>
+                  <td>foaf:primaryTopic</td>
+                  <td>https://en.wikipedia.org/wiki/1976</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+     <!-- /Intro -->
+
+     <!-- Footer-->
+     <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-3">
+          </div>
+
+          <div class="col-md-6 col-sm6 section-bg-color">
+            <div class="row">
+              <div class="col-sm-9">
+                <h2>INFO</h2>
+                <p>Created by Elviira, Giulia, and Nooshin</p>
+								<p>Knowledge Organization and Digital Methods in The Cultural Heritage Domain</p>
+                <p>University of Bologna</p>
+              </div><!-- /col-sm-9 -->
+            </div><!--/row-->
+          </div><!-- /col-sm-6 -->
+          <div class="col-md-3 col-sm-3 section-bg-color1">
+            <div class="row">
+              <div class="col-sm-9">
+              <h3><a href="http://github.com/marvellod/marvellod.github.io" target="_blank">View project source on Github</a></h3>
+              <p class="pull-right icons-small"><a href="http://github.com/marvellod/marvellod.github.io" target="_blank"><img src="images/github.png" alt=""/></a></p>
+              <!-- <p class="pull-right icons-f"><a href=""><img src="images/facebook.png" alt=""/></a></p> -->
+              </div><!-- /col-sm-9 -->
+            </div><!--/row-->
+          </div><!-- /col-sm-3 -->
+        </div><!-- /row -->
+      </div><!-- /container -->
+    </footer><!-- /footer -->
+
+	<!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+    <!-- Boostrap JS -->
+	<script src="js/bootstrap.min.js"></script>
+    <!-- Masonry JavaScript -->
+    <script src="js/masonry.js"></script>
+    <!-- Nav JS -->
+	<script src="js/nav.js"></script>
+    <!-- Smooth scroll JS -->
+    <script src="js/smoothscroll.js"></script>
+    <!-- Wow JavaScript -->
+    <script src="js/wow.js"></script>
+
+    <script>
+    new WOW().init();
+    </script>
+
+
+	</body>
+</html>

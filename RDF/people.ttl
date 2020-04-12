@@ -1,0 +1,39 @@
+@base <http://marvellod.github.io/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix foaf: <//xmlns.com/foaf/0.1/>.
+@prefix rdac: <http://rdaregistry.info/Elements/c/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix core: <https://www.bbc.co.uk/ontologies/coreconcepts/>.
+@prefix schema: <http://schema.org/>.
+@prefix gn: <http://sws.geonames.org/>.
+
+
+<person/roald_dahl>
+
+    rdf:type foaf:Person;
+    foaf:name "Roald Dahl";
+    foaf:gender "male";
+    person:placeofBirth gn:10296464; # Llandaff, Cardiff, Wales
+    person:placeofDeath gn:2640729; # Oxford, England
+    person:citizenship "British";
+    core:dateOfBirth "1916-09-13"^^schema:date;
+    core:dateOfDeath "1990-11-23"^^schema:date;
+    core:occupation "writer";
+    core:knownFor "children's books";
+    core:notablyAssociatedWith <person/quentin_blake>;
+    foaf:isPrimaryTopicOf <https://www.imdb.com/title/tt5907158/>;
+    owl:sameAs <http://viaf.org/108159131>.
+
+<person/quentin_blake>
+
+    rdf:type foaf:Person;
+    foaf:name "Sir Quentin Saxby Blake";
+    foaf:gender "male";
+    person:placeofBirth gn:2637861; # Sidcup, Kent, England
+    person:citizenship "British";
+    core:dateOfBirth "1932-12-16"^^schema:date;
+    core:occupation "writer", "illustrator";
+    core:knownFor "children's books illustrations";
+    core:notablyAssociatedWith <person/roald_dahl>;
+    owl:sameAs <http://viaf.org/108680806>.
