@@ -1,0 +1,82 @@
+@base <http://marvellod.github.io/representation#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix foaf: <//xmlns.com/foaf/0.1/>.
+@prefix rdac: <http://rdaregistry.info/Elements/c/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix core: <https://www.bbc.co.uk/ontologies/coreconcepts/>.
+@prefix schema: <http://schema.org/>.
+@prefix gn: <http://sws.geonames.org/>.
+@prefix aat: <http://www.getty.edu/research/tools/vocabularies/aat/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix aat: <http://vocab.getty.edu/page/aat>.
+
+<person/roald_dahl>
+
+    rdf:type foaf:Person;
+    foaf:name "Roald Dahl";
+    foaf:gender "male";
+    person:placeofBirth gn:10296464; # Llandaff, Cardiff, Wales
+    person:placeofDeath gn:2640729; # Oxford, England
+    person:citizenship "British";
+    core:dateOfBirth "1916-09-13"^^schema:date;
+    core:dateOfDeath "1990-11-23"^^schema:date;
+    core:occupation "writer";
+    core:knownFor "children's books";
+    core:notablyAssociatedWith <person/quentin_blake>;
+    foaf:isPrimaryTopicOf <https://www.imdb.com/title/tt5907158/>;
+    owl:sameAs <http://viaf.org/108159131>.
+
+<person/quentin_blake>
+
+    rdf:type foaf:Person;
+    foaf:name "Sir Quentin Saxby Blake";
+    foaf:gender "male";
+    person:placeofBirth gn:2637861; # Sidcup, Kent, England
+    person:citizenship "British";
+    core:dateOfBirth "1932-12-16"^^schema:date;
+    core:occupation "writer", "illustrator";
+    core:knownFor "children's books illustrations";
+    core:notablyAssociatedWith <person/roald_dahl>;
+    owl:sameAs <http://viaf.org/108680806>.
+
+    _:trunchbull
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Miss_Trunchbull>;
+    foaf:name "Miss Trunchbull".
+
+    _:matilda
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Matilda_Wormwood>;
+    foaf:name "Matilda Wormwood".
+
+    <object/matilda>
+
+    rdf:type schema:Book;
+    rdfs:label "Matilda";
+    owl:SameAs: <http://viaf.org/viaf/200813669>;
+    dcterms:identifier "ISBN: 0224025724";
+    dcterms:subject <http://vocab.getty.edu/page/aat/300263209>; #children's literature
+    dcterms:description "Matilda is an exceptional girl, but her parents think she is just a nuisance. When one day she is attacked by her odious headmistress, Miss Trunchball, Matilda suddenly discovers she has a remarkable power with which to avenge herself. ";
+    schema:author <person/roald_dahl>;
+    schema:illustrator <person/quentin_blake>;
+    schema:Character _:trunchbull;
+    schema:Character _:matilda;
+    dcterms:coverage gn:2643743; # London
+    schema:publisher "Jonathan Cape";
+    dcterms:issued "1988"^^schema:date;
+    foaf:isPrimaryTopicOf <object/sculpture>.
+
+    <object/sculpture>
+
+  	crm:E22_human-made_object "Sculpture";
+  	rdfs:label "Matilda facing Donald Trump";
+  	crm:E55_type aat:300411642; #Visual art
+  	dcterms:description "Statue of Roald Dahl’s character Matilda standing face-to-face with the U.S. President Donald Trump created in celebration of the 30th anniversary of Dahl's book Matilda";
+  	crm:E41_appellation "2018-10-1"^^schema:date;
+  	crm:E41_appellation gn:2648057; # Great Missenden, Buckinghamshire, South East England
+  	crm:E30_right "Roald Dahl Museum and Story Centre";
+  	crm:E57_material aat:300014546; #resin
+  	crm:E74_person "Drew Roper";
+  	rdfs:seeAlso <https://statues.vanderkrogt.net/object.php?webpage=ST&record=gbse215>;
+  	foaf:primaryTopic <object/Matilda>.
