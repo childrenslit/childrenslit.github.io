@@ -1,4 +1,4 @@
-@base <http://marvellod.github.io/representation#>.
+@base <http://marvellod.github.io/>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix foaf: <//xmlns.com/foaf/0.1/>.
 @prefix rdac: <http://rdaregistry.info/Elements/c/>.
