@@ -71,7 +71,7 @@
 
   	crm:P2_has_type "Sculpture";
   	rdfs:label "Matilda and President Trump";
-  	dc:subject aat:300411642; #Visual art
+  	dcterms:subject aat:300411642; #Visual art
   	dcterms:description "Statue of Roald Dahl’s character Matilda standing face-to-face with the U.S. President Donald Trump created in celebration of the 30th anniversary of Dahl's book Matilda";
   	crm:P4_has_time-span "2018-10-1"^^schema:date;
   	crm:P55_has_current_location gn:2648057; # Great Missenden, Buckinghamshire, South East England
