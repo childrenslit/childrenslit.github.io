@@ -79,4 +79,4 @@
   	crm:P45_consists_of aat:300014546; #polyester
   	dcterms:creator "Drew Roper";
   	owl:sameAs <https://statues.vanderkrogt.net/object.php?webpage=ST&record=gbse215>;
-  	foaf:primaryTopic <object/Matilda>.
+  	foaf:primaryTopic <object/matilda>.

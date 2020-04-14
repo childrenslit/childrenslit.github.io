@@ -74,6 +74,45 @@
 								<li><a href="https://marvellod.github.io/object/matilda">https://marvellod.github.io/object/matilda</a></li>
 								<li><a href="https://marvellod.github.io/object/sculpture">https://marvellod.github.io/object/sculpture</a></li>
 							</ul>
+						<p class="text-studio">In addition to linking the same authorities for names (people, places, concepts) through owl:sameAs, we have connected our data to other related items that share different features and we have defined the following semantic associations. We widely used owl:sameAs and foaf:isPrimaryTopicOf but also used different properties and standards such as core:notablyAssociatedWith,  foaf:primaryTopic and rdfs:SeeAlso. By doing this were able to create strong connections between the invented URIs and existing linked open databases. Below you can see tha variety of the terms we used for each object defined in RDF. We also used GN and AAT codes for describing subjects and places.</p>
+						<ul>
+							<li><p>Person: Roald Dahl</p>
+								<ul>
+									<li><p><b>foaf:isPrimaryTopicOf <a href="https://www.imdb.com/title/tt5907158/">https://www.imdb.com/title/tt5907158/</a>":</b>
+										Meaning that we linked the URI of Roald Dahl to IMBd, an online film and audiovisual material database.</p></li>
+									<li><p><b>owl:sameAs <a href="http://viaf.org/108159131">http://viaf.org/108159131</a>:</b>
+										Meaning that we connected the URI of Roald Dahl to the Virtual International Authority File.</p></li>
+									<li><p><b>core:notablyAssociatedWith <a href="http://marvellod.github.io/person/quentin_blake"> person/quentin_blake</a>:</b>
+										Meaning that we linked the URI of Roald Dahl to the URI of Quentin Blake.</p></li>
+								</ul>
+							</li>
+							<li><p>Person: Quentin Blake</p>
+								<ul>
+									<li><p><b>owl:sameAs <a href="http://viaf.org/108680806">http://viaf.org/108680806</a>":</b>
+										Meaning that we linked the URI of Quentin Blake to the Virtual International Authority File</p></li>
+									<li><p><b>core:notablyAssociatedWith <a href="http://marvellod.github.io/person/roald_dahl">/person/roald_dahl</a>:</b>
+										Meaning that we linked the URI of Quentin Blake to the URI of Roald Dahl.</p></li>
+								</ul>
+							</li>
+							<li><p>Book: Matilda</p>
+								<ul>
+									<li><p><b>owl:sameAs <a href="http://viaf.org/viaf/200813669">http://viaf.org/viaf/200813669</a>:</b>
+										Meaning that the URI is connected to the Virtual International Authority File about Matilda.</p></li>
+									<li><p><b>Characters</b></p><ul>
+									<li><p><b>Matilda: foaf:isPrimaryTopicOf <a href="https://en.wikipedia.org/wiki/Matilda_Wormwood">https://en.wikipedia.org/wiki/Matilda_Wormwood</a>:</b>
+										Meaning that the URI is connected to the Wikipedia page of the main character in the book.</p></li>
+									<li><p><b>Miss Trunchbull: foaf:isPrimaryTopicOf <a href="https://en.wikipedia.org/wiki/Miss_Trunchbull">https://en.wikipedia.org/wiki/Miss_Trunchbull</a>:</b>
+										Meaning that the URI is connected to the Wikipedia page of one of the character’s in the book.</p></li></ul>
+								</ul>
+							</li>
+							<li><p>Artefact: Sculpture
+								<ul>
+									<li><p><b>owl:sameAs <a href="https://statues.vanderkrogt.net/object.php?webpage=ST&record=gbse215">https://statues.vanderkrogt.net/object.php?webpage=ST&record=gbse215</a>":</b>
+										Meaning that we linked the URI of the artefact to the website depicting the same object.</p></li>
+									<li><p><b>foaf:primaryTopic <a href="http://marvellod.github.io/object/matilda">/object/matilda</a>:</b>
+										Meaning that we linked the URI of the artefact to the book which is its primary topic.</p></li>
+								</ul>
+						</ul>
           </div>
         </div>
      </div>
