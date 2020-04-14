@@ -143,8 +143,8 @@
               <tbody>
                 <tr>
                   <th scope="row">What is the type of entity?</th>
+                  <td>rdf:type</td>
                   <td>Person</td>
-                  <td>RDF</td>
                 </tr>
                 <tr>
                   <th scope="row">What is the person’s name?</th>
@@ -225,94 +225,64 @@
             </h2>
           </div>
           <div class="col-md-7 col-sm-7 studio-margin">
-            <table class="table table-bordered">
+						<table class="table table-bordered">
               <thead>
                 <tr>
                   <th scope="col">Question</th>
                   <th scope="col">Predicate</th>
-                  <th scope="col">Model</th>
+                  <th scope="col">Object</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th scope="row">What is the type of entity?</th>
                   <td>rdf:type</td>
-                  <td>RDF</td>
+                  <td>Person</td>
                 </tr>
                 <tr>
-                  <th scope="row">What is the subject?</th>
-                  <td>dcterms:subject</td>
-                  <td>DCMI Metadata Terms</td>
+                  <th scope="row">What is the person’s name?</th>
+                  <td>foaf:name</td>
+                  <td>Quentin Blake</td>
                 </tr>
                 <tr>
-                  <th scope="row">What is the title/controlled form of the name?</th>
-                  <td>rdfs:label</td>
-                  <td>RDF</td>
+                  <th scope="row">What is the person’s gender?</th>
+                  <td>foaf:gender</td>
+                  <td>Male</td>
                 </tr>
                 <tr>
-                  <th scope="row">What is an alternate name of the book?</th>
-                  <td>schema:alternateName</td>
-                  <td>Schema</td>
+                  <th scope="row">Where was the person born?</th>
+                  <td>person:placeofBirth</td>
+                  <td>Sidcup, Kent, England</td>
                 </tr>
                 <tr>
-                  <th scope="row">What is the identifier? </th>
-                  <td>dcterms:identifier</td>
-                  <td>DCMI Metadata Terms</td>
+                  <th scope="row">What is the person’t citizenship?</th>
+                  <td>person:citizenship</td>
+                  <td>British</td>
                 </tr>
                 <tr>
-                  <th scope="row">What is a summary of the content?</th>
-                  <td>dcterms:description</td>
-                  <td>DCMI Metadata Terms</td>
+                  <th scope="row">When was the person born?</th>
+                  <td>core:dateOfBirth</td>
+                  <td>16 December 1932</td>
                 </tr>
                 <tr>
-                  <th scope="row">Who is the author of the book?</th>
-                  <td>schema:author</td>
-                  <td>Schema</td>
+                  <th scope="row">What is the person's occupation?</th>
+                  <td>core:occupation</td>
+                  <td>Writer, Illustrator</td>
                 </tr>
                 <tr>
-                  <th scope="row">Who is the illustrator of the book?</th>
-                  <td>schema:illustrator</td>
-                  <td>Schema</td>
+                  <th scope="row">What is the person known for?</th>
+                  <td>core:knownFor</td>
+                  <td>Children’s books illustrations</td>
                 </tr>
                 <tr>
-                  <th scope="row">What is the book genre?</th>
-                  <td>dbpedia-owl:LiteraryGenre</td>
-                  <td>DBpedia</td>
+                  <th scope="row">Who is the person notably associated with?</th>
+                  <td>core:notablyAssociatedWith</td>
+                  <td>Roald Dahl</td>
                 </tr>
                 <tr>
-                  <th scope="row">Who appears in the content?</th>
-                  <td>schema:Character</td>
-                  <td>Schema</td>
-                </tr>
-                <tr>
-                  <th scope="row">What is the character description?</th>
-                  <td>dc:description</td>
-                  <td>DCMI Metadata Terms</td>
-                </tr>
-                <tr>
-                  <th scope="row">Which resource has the concept as primary resource?</th>
-                  <td>foaf:isPrimaryTopicOf</td>
-                  <td>FOAF</td>
-                </tr>
-                <tr>
-                  <th scope="row">Where has the book been published?</th>
-                  <td>dc:coverage</td>
-                  <td>DCMI Metadata Terms</td>
-                </tr>
-                <tr>
-                  <th scope="row">When has the book been published?</th>
-                  <td>dcterms:issued </td>
-                  <td>DCMI Metadata Terms</td>
-                </tr>
-                <tr>
-                  <th scope="row">Who is the publisher?</th>
-                  <td>schema:publisher</td>
-                  <td>Schema</td>
-                </tr>
-                <tr>
-                  <th scope="row">Which resources refer to the same concept?</th>
+                  <th scope="row">Which resource refers to the same person?</th>
                   <td>owl:sameAs</td>
-                  <td>OWL</td>
+                  <td>viaf:108680806</td>
                 </tr>
               </tbody>
             </table>
@@ -345,7 +315,7 @@
                 <tr>
                   <th scope="row">What is the type of entity?</th>
                   <td>rdf:type</td>
-                  <td>RDF</td>
+                  <td>Book</td>
                 </tr>
                 <tr>
                   <th scope="row">What is the subject?</th>
@@ -425,7 +395,7 @@
                 <tr>
                   <th scope="row">Which resources refer to the same concept?</th>
                   <td>owl:sameAs</td>
-                  <td>---</td>
+                  <td>viaf:200813669</td>
                 </tr>
               </tbody>
             </table>
@@ -458,7 +428,7 @@
                 <tr>
                   <th scope="row">What is the type of entity?</th>
                   <td>rdf:type</td>
-                  <td>RDF</td>
+                  <td>Book</td>
                 </tr>
                 <tr>
                   <th scope="row">What is the subject?</th>
@@ -543,7 +513,7 @@
                 <tr>
                   <th scope="row">Which resources refer to the same concept?</th>
                   <td>owl:sameAs</td>
-                  <td>---</td>
+                  <td>viaf:2146462613527772337</td>
                 </tr>
               </tbody>
             </table>
@@ -576,7 +546,7 @@
                 <tr>
                   <th scope="row">What is the type of entity?</th>
                   <td>rdf:type</td>
-                  <td>RDF</td>
+                  <td>Book</td>
                 </tr>
                 <tr>
                   <th scope="row">What is the subject?</th>
@@ -636,7 +606,7 @@
                 <tr>
                   <th scope="row">Which resources refer to the same concept?</th>
                   <td>owl:sameAs</td>
-                  <td>---</td>
+                  <td>viaf:1192147270541835700007</td>
                 </tr>
               </tbody>
             </table>
@@ -669,7 +639,7 @@
                 <tr>
                   <th scope="row">What is the type of entity?</th>
                   <td>rdf:type</td>
-                  <td>RDF</td>
+                  <td>Book</td>
                 </tr>
                 <tr>
                   <th scope="row">What is the subject?</th>
@@ -726,11 +696,6 @@
                   <td>schema:publisher</td>
                   <td>Jonathan Cape</td>
                 </tr>
-                <tr>
-                  <th scope="row">Which resources refer to the same concept?</th>
-                  <td>owl:sameAs</td>
-                  <td>---</td>
-                </tr>
               </tbody>
             </table>
           </div>
@@ -770,11 +735,6 @@
                 <td>The Marvellous World of Roald Dahl</td>
               </tr>
               <tr>
-                <th scope="row">What is the subject?</th>
-                <td>dcterms:subject</td>
-                <td>Roald Dahl, his story and collaboration with Quentin Blake</td>
-              </tr>
-              <tr>
                 <th scope="row">What is the summary of the content?</th>
                 <td>dcterms:description</td>
                 <td>A documentary film about Roald Dahl, his works</td>
@@ -786,23 +746,23 @@
               </tr>
               <tr>
                 <th scope="row">Who is the creator of the material?</th>
-                <td>dc:agent</td>
+                <td>dc:creator</td>
                 <td>Andrew Thompson</td>
               </tr>
               <tr>
                 <th scope="row">When was the material created?</th>
-                <td>ebucore:idDateOfCreation</td>
+                <td>ebucore:dateCreated</td>
                 <td>2016</td>
+              </tr>
+							<tr>
+                <th scope="row">Where was the material created?</th>
+                <td>ebucore:hasCreationLocation</td>
+                <td>England</td>
               </tr>
               <tr>
                 <th scope="row">When was the material published?</th>
                 <td>ebucore:publicationStartDateTime</td>
-                <td>England</td>
-              </tr>
-              <tr>
-                <th scope="row">Where was the material created?</th>
-                <td>ebucore:location</td>
-                <td>British Broadcasting Corporation (BBC)</td>
+                <td>2016</td>
               </tr>
               <tr>
                 <th scope="row">Where was the material published?</th>
@@ -810,18 +770,18 @@
                 <td>British Broadcasting Corporation (BBC)</td>
               </tr>
               <tr>
-                <th scope="row">Who owns the right to the material?</th>
-                <td>ebucore:Rights</td>
+                <th scope="row">Who owns the rights to the material?</th>
+                <td>ebucore:hasRightsHolder</td>
                 <td>British Broadcasting Corporation (BBC)</td>
               </tr>
               <tr>
-                <th scope="row">Who is the producer of the material?</th>
-                <td>ebucore:Organization</td>
+                <th scope="row">What organization is the producer of the material?</th>
+                <td>ebucore:hasAffiliation</td>
                 <td>British Broadcasting Corporation (BBC)</td>
               </tr>
               <tr>
                 <th scope="row">Who are cast members in the material?</th>
-                <td>ebucore:Cast</td>
+                <td>ebucore:hasCastMember</td>
                 <td>Roald Dahl, Quentin Blake</td>
               </tr>
             </tbody>
@@ -874,22 +834,22 @@
               </tr>
               <tr>
                 <th scope="row">Who is the creator of the material?</th>
-                <td>dc:agent</td>
+                <td>dc:creator</td>
                 <td>Jakob Schuh, Jan Lachauer</td>
               </tr>
               <tr>
                 <th scope="row">When was the material created?</th>
-                <td>ebucore:idDateOfCreation</td>
-                <td>December 26, 2016</td>
+                <td>ebucore:dateCreated</td>
+                <td>2016</td>
               </tr>
               <tr>
                 <th scope="row">When was the material published?</th>
                 <td>ebucore:publicationStartDateTime</td>
-                <td>England, Germany</td>
+                <td>December 26, 2016</td>
               </tr>
               <tr>
                 <th scope="row">Where was the material created?</th>
-                <td>ebucore:location</td>
+                <td>ebucore:hasCreationLocation</td>
                 <td>England, Germany</td>
               </tr>
               <tr>
@@ -897,10 +857,15 @@
                 <td>ebucore:hasPublicationRegion</td>
                 <td>International distribution </td>
               </tr>
+							<tr>
+                <th scope="row">Who owns the rights to the material?</th>
+                <td>ebucore:hasRightsHolder</td>
+                <td>British Broadcasting Corporation (BBC)</td>
+              </tr>
               <tr>
-                <th scope="row">Who is the producer of the material?</th>
-                <td>ebucore:Organization</td>
-                <td>Magic Light Pictures, Triggerfish Animation</td>
+                <th scope="row">What organization is the producer of the material?</th>
+                <td>ebucore:hasAffiliation</td>
+                <td>British Broadcasting Corporation (BBC), Magic Light Pictures, Triggerfish Animation</td>
               </tr>
             </tbody>
           </table>
@@ -933,7 +898,7 @@
              <tr>
                <th scope="row">What is the type of entity?</th>
                <td>rdf:type</td>
-               <td>Newspaper article (review)</td>
+               <td>Newspaper article</td>
              </tr>
              <tr>
                <th scope="row">What is the title?</th>
@@ -961,14 +926,9 @@
                <td>September 27, 1981</td>
              </tr>
              <tr>
-               <th scope="row">Where was the document published?</th>
-               <td>dcterms:coverage</td>
+               <th scope="row">What organization published the document?</th>
+               <td>dcterms:publisher</td>
                <td>The Canberra Times</td>
-             </tr>
-             <tr>
-               <th scope="row">What is the format of the document?</th>
-               <td>dcterms:format</td>
-               <td>Paper article</td>
              </tr>
              <tr>
                <th scope="row">What is the material of the document?</th>
@@ -978,7 +938,7 @@
              <tr>
                <th scope="row">Who is the creator of the document?</th>
                <td>dcterms:creator</td>
-               <td>Jonathan Cape</td>
+               <td>Unknown</td>
              </tr>
              <tr>
                <th scope="row">What does the document also contain?</th>
@@ -1016,7 +976,7 @@
              <tr>
                <th scope="row">What is the type of entity?</th>
                <td>rdf:type</td>
-               <td>A special edition postage stamp</td>
+               <td>postage stamp</td>
              </tr>
              <tr>
                <th scope="row">What is the title?</th>
@@ -1034,9 +994,9 @@
                <td>1993</td>
              </tr>
              <tr>
-               <th scope="row">What is the format of the document?</th>
-               <td>dcterms:format</td>
-               <td>Postage stamp</td>
+               <th scope="row">What organization published the document?</th>
+               <td>dcterms:publisher</td>
+               <td>Royal Mail</td>
              </tr>
              <tr>
                <th scope="row">What is the material of the document?</th>
@@ -1046,11 +1006,6 @@
              <tr>
                <th scope="row">Who is the creator of the document?</th>
                <td>dcterms:creator</td>
-               <td>Royal Mail</td>
-             </tr>
-             <tr>
-               <th scope="row">Who is the contributor?</th>
-               <td>dc:contributor</td>
                <td>Quentin Blake</td>
              </tr>
              <tr>
@@ -1077,51 +1032,52 @@
          </h2>
        </div>
        <div class="col-md-7 col-sm-7 studio-margin">
-         <table class="table table-bordered">
-           <thead>
-             <tr>
-               <th scope="col">Question</th>
-               <th scope="col">Predicate</th>
-               <th scope="col">Object</th>
-             </tr>
-           </thead>
-           <tbody>
-             <tr>
-               <th scope="row">What is the type of entity?</th>
-               <td>rdf:type</td>
-               <td>Leather sandal</td>
-             </tr>
-             <tr>
-               <th scope="row">What is the title?</th>
-               <td>rdfs:label</td>
-               <td>BFG’s sandal</td>
-             </tr>
-             <tr>
-               <th scope="row">What is the summary of the artefact?</th>
-               <td>dcterms:description</td>
-               <td>Pair of brown leather sandals formerly belonging to Roald Dahl were sent to Quentin Blake as an inspiration when the two were collaborating to create illustrations for The BFG </td>
-             </tr>
-             <tr>
-               <th scope="row">When was the artefact published?</th>
-               <td>4.2. Creation Date</td>
-               <td>The sandal was sent to Quentin Blake in 1982</td>
-             </tr>
-             <tr>
-               <th scope="row">Where was the artefact published?</th>
-               <td>29.2. Place Name CORE</td>
-               <td>England</td>
-             </tr>
-             <tr>
-               <th scope="row">Who is the provider of the artefact?</th>
-               <td>ebucore:Organization</td>
-               <td>The Roald Dahl Archive</td>
-             </tr>
-             <tr>
-               <th scope="row">Who is the contributor?</th>
-               <td>28.2. Person Corporate Body Name CORE</td>
-               <td>Roald Dahl, Quentin Blake</td>
-             </tr>
-           </tbody>
+				 <table class="table table-bordered">
+					 <thead>
+						 <tr>
+							 <th scope="col">Question</th>
+							 <th scope="col">Predicate</th>
+							 <th scope="col">Object</th>
+						 </tr>
+					 </thead>
+					 <tbody>
+						 <tr>
+							 <th scope="row">What is the type of entity?</th>
+							 <td>crm:P2_has_type</td>
+							 <td>Shoes</td>
+						 </tr>
+						 <tr>
+							 <th scope="row">What is the subject?</th>
+							 <td>dc:subject</td>
+							 <td>Clothing</td>
+						 </tr>
+						 <tr>
+							 <th scope="row">What is the summary of the artefact?</th>
+							 <td>dcterms:description</td>
+							 <td>Pair of brown leather sandals formerly belonging to Roald Dahl were sent to Quentin Blake as an inspiration when the two were collaborating to create illustrations for The BFG </td>
+						 </tr>
+						 <tr>
+							 <th scope="row">What is the current location of the artefact?</th>
+							 <td>crm:P55_has_current_location</td>
+							 <td>Great Missenden, Buckinghamshire, South East England</td>
+						 </tr>
+						 <tr>
+							 <th scope="row">What is the material of the artefact?</th>
+							 <td>crm:P45_consists_of</td>
+							 <td>Leather</td>
+						 </tr>
+						 <tr>
+							 <th scope="row">Who is the current keeper of the artefact?</th>
+							 <td>crm:P50_has_current_keeper</td>
+							 <td>Roald Dahl Museum and Story Centre</td>
+						 </tr>
+						 <tr>
+							 <th scope="row">What is a related object?</th>
+							 <td>dc:relation</td>
+							 <td>The BFG Book</td>
+						 </tr>
+					 </tbody>
+				 </table>
          </table>
        </div>
      </div>
@@ -1140,62 +1096,67 @@
          </h2>
        </div>
        <div class="col-md-7 col-sm-7 studio-margin">
-         <table class="table table-bordered">
-           <thead>
-             <tr>
-               <th scope="col">Question</th>
-               <th scope="col">Predicate</th>
-               <th scope="col">Object</th>
-             </tr>
-           </thead>
-           <tbody>
-             <tr>
-               <th scope="row">What is the type of entity?</th>
-               <td>rdf:type</td>
-               <td>Sculpture</td>
-             </tr>
-             <tr>
-               <th scope="row">What is the title?</th>
-               <td>rdfs:label</td>
-               <td>Matilda facing Donald Trump</td>
-             </tr>
-             <tr>
-               <th scope="row">What is the subject?</th>
-               <td>1.1.Catalog Level</td>
-               <td>Visual art</td>
-             </tr>
-             <tr>
-               <th scope="row">What is the summary of the artefact?</th>
-               <td>dcterms:description</td>
-               <td>Roald Dahl’s character Matilda is standing face-to-face with the U.S. President Donald Trump</td>
-             </tr>
-             <tr>
-               <th scope="row">When was the artefact published?</th>
-               <td>4.2. Creation Date</td>
-               <td>October 16, 2018</td>
-             </tr>
-             <tr>
-               <th scope="row">Where was the artefact published?</th>
-               <td>29.2. Place Name CORE</td>
-               <td>Great Missenden, North-West London</td>
-             </tr>
-             <tr>
-               <th scope="row">Who owns rights to the artefact?</th>
-               <td>ebucore:Rights</td>
-               <td>Roald Dahl Museum and Story Centre</td>
-             </tr>
-             <tr>
-               <th scope="row">Who is the provider of the artefact?</th>
-               <td>ebucore:Organization</td>
-               <td>Getty Images</td>
-             </tr>
-             <tr>
-               <th scope="row">Who is the contributor?</th>
-               <td>28.2. Person Corporate Body Name CORE</td>
-               <td>Unknown</td>
-             </tr>
-           </tbody>
-         </table>
+				 <table class="table table-bordered">
+					 <thead>
+						 <tr>
+							 <th scope="col">Question</th>
+							 <th scope="col">Predicate</th>
+							 <th scope="col">Model</th>
+						 </tr>
+					 </thead>
+					 <tbody>
+						 <tr>
+							 <th scope="row">What is the type of entity?</th>
+							 <td>crm:P2_has_type</td>
+							 <td>Sculpture</td>
+						 </tr>
+						 <tr>
+							 <th scope="row">What is the title?</th>
+							 <td>rdfs:label</td>
+							 <td>Matilda and President Trump</td>
+						 </tr>
+						 <tr>
+							 <th scope="row">What is the subject?</th>
+							 <td>dc:subject</td>
+							 <td>Visual art</td>
+						 </tr>
+						 <tr>
+							 <th scope="row">What is the summary of the artefact?</th>
+							 <td>dcterms:description</td>
+							 <td>Statue of Roald Dahl’s character Matilda standing face-to-face with the U.S. President Donald Trump created in celebration of the 30th anniversary of Dahl’s book Matilda</td>
+						 </tr>
+						 <tr>
+							 <th scope="row">When was the artefact published?</th>
+							 <td>crm:P4_has_time-span</td>
+							 <td>October 1, 2018</td>
+						 </tr>
+						 <tr>
+							 <th scope="row">What is the current location of the artefact?</th>
+							 <td>crm:P55_has_current_location</td>
+							 <td>Great Missenden, Buckinghamshire, South East England</td>
+						 </tr>
+						 <tr>
+							 <th scope="row">What is the material of the artefact?</th>
+							 <td>crm:P45_consists_of</td>
+							 <td>Polyester</td>
+						 </tr>
+						 <tr>
+							 <th scope="row">Who is the current keeper of the artefact?</th>
+							 <td>crm:P50_has_current_keeper</td>
+							 <td>Roald Dahl Museum and Story Centre</td>
+						 </tr>
+						 <tr>
+							 <th scope="row">Who is the creator?</th>
+							 <td>dcterms:creator</td>
+							 <td>Drew Roper</td>
+						 </tr>
+						 <tr>
+							 <th scope="row">What is this artefact's primary topic?</th>
+							 <td>foaf:primaryTopic</td>
+							 <td>Matilda Book</td>
+						 </tr>
+					 </tbody>
+				 </table>
        </div>
      </div>
 

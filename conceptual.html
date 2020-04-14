@@ -417,11 +417,6 @@
                   <td>RDF</td>
                 </tr>
                 <tr>
-                  <th scope="row">What is the subject?</th>
-                  <td>dcterms:subject</td>
-                  <td>DCMI Metadata Terms</td>
-                </tr>
-                <tr>
                   <th scope="row">What is the summary of the content?</th>
                   <td>dcterms:description</td>
                   <td>DCMI Metadata Terms</td>
@@ -433,22 +428,22 @@
                 </tr>
                 <tr>
                   <th scope="row">Who is the creator of the material?</th>
-                  <td>dc:agent</td>
+                  <td>dc:creator</td>
                   <td>DCMI Metadata Terms</td>
                 </tr>
                 <tr>
                   <th scope="row">When was the material created?</th>
-                  <td>ebucore:idDateOfCreation</td>
-                  <td>DCMI Metadata Terms</td>
+                  <td>ebucore:dateCreated</td>
+                  <td>EBUCore</td>
                 </tr>
                 <tr>
                   <th scope="row">When was the material published?</th>
                   <td>ebucore:publicationStartDateTime</td>
-                  <td>DCMI Metadata Terms</td>
+                  <td>EBUCore</td>
                 </tr>
                 <tr>
                   <th scope="row">Where was the material created?</th>
-                  <td>ebucore:location</td>
+                  <td>ebucore:hasCreationLocation</td>
                   <td>EBUCore</td>
                 </tr>
                 <tr>
@@ -457,23 +452,18 @@
                   <td>EBUCore</td>
                 </tr>
                 <tr>
-                  <th scope="row">Who is the contributor?</th>
-                  <td>ebucore:Person</td>
-                  <td>EBUCore</td>
-                </tr>
-                <tr>
                   <th scope="row">Who owns the right to the material?</th>
-                  <td>ebucore:Rights</td>
+                  <td>ebucore:hasRightsHolder</td>
                   <td>EBUCore</td>
                 </tr>
                 <tr>
-                  <th scope="row">Who is the producer of the material?</th>
-                  <td>ebucore:Organization</td>
+                  <th scope="row">What organization is the producer of the material?</th>
+                  <td>ebucore:hasAffiliation</td>
                   <td>EBUCore</td>
                 </tr>
                 <tr>
                   <th scope="row">Who are cast members in the material?</th>
-                  <td>ebucore:Cast</td>
+                  <td>ebucore:hasCastMember</td>
                   <td>EBUCore</td>
                 </tr>
               </tbody>
@@ -500,11 +490,6 @@
                   <td>RDF</td>
                 </tr>
                 <tr>
-                  <th scope="row">What is the subject?</th>
-                  <td>dcterms:subject</td>
-                  <td>DCMI Metadata Terms</td>
-                </tr>
-                <tr>
                   <th scope="row">What is the summary of the content?</th>
                   <td>dc:description</td>
                   <td>DCMI Metadata Terms</td>
@@ -515,23 +500,13 @@
                   <td>DCMI Metadata Terms</td>
                 </tr>
                 <tr>
-                  <th scope="row">What is the document identifier?</th>
-                  <td>dcterms:identifier</td>
-                  <td>DCMI Metadata Terms</td>
-                </tr>
-                <tr>
                   <th scope="row">When was the document published?</th>
                   <td>dcterms:issued</td>
                   <td>DCMI Metadata Terms</td>
                 </tr>
                 <tr>
-                  <th scope="row">Where was the document published?</th>
-                  <td>dcterms:coverage</td>
-                  <td>DCMI Metadata Terms</td>
-                </tr>
-                <tr>
-                  <th scope="row">What is the format of the document?</th>
-                  <td>dcterms:format</td>
+                  <th scope="row">What organization published the document?</th>
+                  <td>dcterms:publisher</td>
                   <td>DCMI Metadata Terms</td>
                 </tr>
                 <tr>
@@ -542,11 +517,6 @@
                 <tr>
                   <th scope="row">Who is the creator of the document?</th>
                   <td>dcterms:creator</td>
-                  <td>DCMI Metadata Terms</td>
-                </tr>
-                <tr>
-                  <th scope="row">Who is the contributor?</th>
-                  <td>dc:contributor</td>
                   <td>DCMI Metadata Terms</td>
                 </tr>
                 <tr>
@@ -569,8 +539,8 @@
               <tbody>
                 <tr>
                   <th scope="row">What is the type of entity?</th>
-                  <td>rdf:type</td>
-                  <td>RDF</td>
+                  <td>crm:P2_has_type</td>
+                  <td>CIDOC-CRM</td>
                 </tr>
                 <tr>
                   <th scope="row">What is the title?</th>
@@ -579,38 +549,48 @@
                 </tr>
                 <tr>
                   <th scope="row">What is the subject?</th>
-                  <td>1.1.Catalog Level</td>
-                  <td>CDWA</td>
+                  <td>dc:subject</td>
+                  <td>DCMI Metadata Terms</td>
                 </tr>
-                <tr>
+								<tr>
                   <th scope="row">What is the summary of the artefact?</th>
                   <td>dcterms:description</td>
                   <td>DCMI Metadata Terms</td>
                 </tr>
                 <tr>
                   <th scope="row">When was the artefact published?</th>
-                  <td>4.2. Creation Date</td>
-                  <td>CDWA</td>
+                  <td>crm:P4_has_time-span</td>
+                  <td>CIDOC-CRM</td>
                 </tr>
                 <tr>
-                  <th scope="row">Where was the artefact published?</th>
-                  <td>29.2. Place Name CORE</td>
-                  <td>CDWA</td>
+                  <th scope="row">What is the current location of the artefact?</th>
+                  <td>crm:P55_has_current_location</td>
+                  <td>CIDOC-CRM</td>
                 </tr>
                 <tr>
-                  <th scope="row">Who owns rights to the artefact?</th>
-                  <td>ebucore:Rights</td>
-                  <td>EBUCore</td>
+                  <th scope="row">What is the material of the artefact?</th>
+                  <td>crm:P45_consists_of</td>
+                  <td>CIDOC-CRM</td>
                 </tr>
                 <tr>
-                  <th scope="row">Who is the provider of the artefact?</th>
-                  <td>ebucore:Organization</td>
-                  <td>EBUCore</td>
+                  <th scope="row">Who is the current keeper of the artefact?</th>
+                  <td>crm:P50_has_current_keeper</td>
+                  <td>CIDOC-CRM</td>
                 </tr>
                 <tr>
-                  <th scope="row">Who is the contributor?</th>
-                  <td>28.2. Person Corporate Body Name CORE</td>
-                  <td>CDWA</td>
+                  <th scope="row">Who is the creator?</th>
+                  <td>dcterms:creator</td>
+                  <td>DCMI Metadata Terms</td>
+                </tr>
+								<tr>
+                  <th scope="row">What is a related object?</th>
+                  <td>dc:relation</td>
+                  <td>DCMI Metadata Terms</td>
+                </tr>
+								<tr>
+                  <th scope="row">What is this artefact's primary topic?</th>
+                  <td>foaf:primaryTopic</td>
+                  <td>FOAF</td>
                 </tr>
               </tbody>
             </table>

@@ -69,14 +69,14 @@
 
     <object/sculpture>
 
-  	crm:E22_human-made_object "Sculpture";
-  	rdfs:label "Matilda facing Donald Trump";
-  	crm:E55_type aat:300411642; #Visual art
+  	crm:P2_has_type "Sculpture";
+  	rdfs:label "Matilda and President Trump";
+  	dc:subject aat:300411642; #Visual art
   	dcterms:description "Statue of Roald Dahl’s character Matilda standing face-to-face with the U.S. President Donald Trump created in celebration of the 30th anniversary of Dahl's book Matilda";
-  	crm:E41_appellation "2018-10-1"^^schema:date;
-  	crm:E41_appellation gn:2648057; # Great Missenden, Buckinghamshire, South East England
-  	crm:E30_right "Roald Dahl Museum and Story Centre";
-  	crm:E57_material aat:300014546; #resin
-  	crm:E74_person "Drew Roper";
-  	rdfs:seeAlso <https://statues.vanderkrogt.net/object.php?webpage=ST&record=gbse215>;
+  	crm:P4_has_time-span "2018-10-1"^^schema:date;
+  	crm:P55_has_current_location gn:2648057; # Great Missenden, Buckinghamshire, South East England
+  	crm:P50_has_current_keeper "Roald Dahl Museum and Story Centre";
+  	crm:P45_consists_of aat:300014546; #polyester
+  	dcterms:creator "Drew Roper";
+  	owl:sameAs <https://statues.vanderkrogt.net/object.php?webpage=ST&record=gbse215>;
   	foaf:primaryTopic <object/Matilda>.
